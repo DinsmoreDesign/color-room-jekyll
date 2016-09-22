@@ -1,0 +1,117 @@
+---
+layout: default
+image: /img/kait.jpg
+---
+
+  <!-- Hero Image -->
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img class="responsive-img" src="/img/kait.jpg" alt="Bride in wedding gown's ring">
+      </div>
+      <div class="textbox hide-on-small-only">
+        <div class="container">
+          <h1 class="thin">Motion Picture Memories</h1>
+          <p>The most important thing to us is <strong>your story</strong>. Color Room Films uses the highest grade cinematic tools available to tell your story; the same cameras, lenses, aerial drones and other tools you would see on a Hollywood set. We prefer to work behind the scenes to avoid getting in the way, our goal is to remain discreet and make sure <strong>you</strong> remain the focal point all day. We are here to tell your story in the most emotional, cinematic and honest way possible, at the best value for your dollar.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row hide-on-med-and-up">
+      <div class="container">
+        <h1 class="thin colorize">Motion Picture Memories</h1>
+        <p>The most important thing to us is <strong>your story</strong>. Color Room Films uses the highest grade cinematic tools available to tell your story; the same cameras, lenses, aerial drones and other tools you would see on a Hollywood set. We prefer to work behind the scenes to avoid getting in the way, our goal is to remain discreet and make sure <strong>you</strong> remain the focal point all day. We are here to tell your story in the most emotional, cinematic and honest way possible, at the best value for your dollar.</p>
+      </div>
+    </div>
+
+  <!-- Featured Area -->
+
+    <div class="row featured-sm">
+      <div class="container">
+        <div class="col s12 center">
+          <h3 class="thin">Featured on...</h3>
+        </div>
+        <div class="col s6 center">
+          <a title="Color Room Films WeddingWire Reviews, Southern New Jersey Videography" href="http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" target="_blank">
+            <i class="icon-weddingwire"></i>
+            <h5 class="thin">WeddingWire</h5>
+            <p>14+ Reviews</p>
+          </a>
+        </div>
+        <div class="col s6 center">
+          <a title="Color Room Films The Knot Reviews, Southern New Jersey Videography" href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" target="_blank">
+            <i class="icon-theknot"></i>
+            <h5 class="thin">The Knot</h5>
+            <p>14+ Reviews</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- Recent Work -->
+
+    <div class="row featured-vid">
+      <div class="video-container">
+        <iframe src="https://player.vimeo.com/video/172463227?color=26a69a&title=0&byline=0&portrait=0" width="100%" frameborder="0" title="Liz & Dan - Wedding Trailer by Color Room Films" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="row featured-vid-sm hide-on-small-only">
+      <div class="col l4 m4 s12">
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/166378192?color=26a69a&title=0&byline=0&portrait=0" width="100%" frameborder="0" title="Kait & Jimmy - Wedding Trailer by Color Room Films" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col l4 m4 s12">
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/177558452?color=26a69a&title=0&byline=0&portrait=0" width="100%" frameborder="0" title="Greer & Steven - Short Film Wedding Trailer by Color Room Films" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col l4 m4 s12">
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/176455173?color=26a69a&title=0&byline=0&portrait=0" width="100%" frameborder="0" title="Taylor & Ian - Wedding Trailer by Color Room Films" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  <!-- Reviews -->
+
+    <div class="row slider-title">
+      <div class="container">
+        <h3 class="thin colorize center">What our couples say...</h3>
+      </div>
+    </div>
+    <div class="slider review-slider">
+      <ul class="slides">
+
+        {% for testimonials in site.testimonials %}
+
+          <li>
+            <img src="{{ testimonials.img }}" alt="{{ testimonials.alt }}">
+            <div class="caption center-align">
+              <a href="{{ testimonials.link }}" title="{{ testimonials.titla }}" target="_blank">
+                <h2 class="thin">
+                  <i class="{{ testimonials.icon }}"></i>
+                </h2>
+                <hr class="thin" />
+                <h5 class="thin">
+                  {{ testimonials.review }}
+                </h5>
+                <hr class="thin heart" />
+                <h3 class="thin">- {{ testimonials.name }}</h3>
+              </a>
+            </div>
+          </li>
+
+        {% endfor %}
+        
+      </ul>
+    </div>
+
+  <!-- Call to Action -->
+
+    <div class="row">
+      <a href="contact.html" class="waves-effect waves-light btn cta" title="Contact Us">
+        <h4>
+          Send us a message for availability & pricing.
+        </h4>
+      </a>
+    </div>

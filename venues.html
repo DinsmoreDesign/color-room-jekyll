@@ -1,0 +1,52 @@
+---
+layout: page
+permalink: /venues/
+title: "Venues | Color Room Films"
+description: "We partner with many beautiful venues in New Jersey, view our collection of film trailers shot in a few premier locations."
+image: /img/venues.jpg
+---
+
+  <!-- Hero Video -->
+
+    <div class="row" style="max-height: 96vh">
+      	<div class="video-container">
+        	<iframe src="https://player.vimeo.com/video/172463227?color=26a69a&title=0&byline=0&portrait=0" style="width: 100%; max-height: 96vh;" frameborder="0" title="Liz & Dan - Wedding Trailer by Color Room Films" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      	</div>
+    </div>
+
+  <!-- Content Container -->
+
+    <div class="padbox">
+
+	    <div class="container">
+	        <div class="row">
+	          	<div class="col s12">
+	            	<h3 class="thin colorize">Venues</h3>
+	            	<p>
+	              		Here are just a few of the beautiful venues we've had the pleasure of filming in...
+	            	</p>
+	          	</div>
+	        </div>
+	    </div>
+
+    <!-- Videos -->
+
+      	<div class="container">
+	        <div class="row">
+
+		        {% for venuevids in site.venuevids %}
+
+		          	<div class="col m6 s12">
+		            	<h5 class="thin colorize">{{ venuevids.title }} <small class="gray">{{ venuevids.location }}</small></h5>
+		            	<div class="video-container">
+		              		<iframe src="{{ venuevids.link }}" frameborder="0" title="{{ venuevids.description }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		            	</div>
+		          	</div>
+
+		        {% endfor %}
+
+		    </div>
+
+      	</div>
+
+    </div>

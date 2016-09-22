@@ -1,0 +1,435 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+// $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $base-font-weight: 400;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// Import partials from the `minima` theme.
+// @import "minima";
+
+body {
+	background-color: #FFF;
+}
+
+nav {
+	background-color: #FFF;
+}
+
+	nav .brand-logo {
+		color: #26a69a;
+	}
+
+	nav a {
+		color: #26a69a;
+	}
+
+	nav ul a {
+		color: #26a69a;
+	}
+
+a {
+	color: #26a69a;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+p {
+	font-size: 1.3rem;
+	color: #777;
+	font-weight: 300;
+}
+
+.container {
+	max-width: 100%;
+}
+
+.thin {
+	color: #777;
+	font-weight: 300;
+}
+
+.slider {
+	margin-bottom: 40px;
+}
+
+.colorize {
+	color: #26a69a;
+}
+
+.gray {
+	color: #777;
+}
+
+.slider .slides h4 {
+	color: #26a69a;
+}
+
+.slider .slides li .caption {
+	top: auto;
+	bottom: 40px;
+}
+
+	.caption .thin {
+		color: #FFF;
+	}
+
+.slider-title {
+	margin: 100px 0 100px 0;
+}
+
+	.slider-title h3 {
+		margin: 0;
+	}
+
+.review-slider {
+	margin-bottom: -40px;
+}
+
+	.review-slider .slides {
+		background-color: #000;
+	}
+
+	.review-slider img {
+		opacity: 0.7;
+	}
+
+	.review-slider .indicators {
+		bottom: 60px;
+		z-index: 999;
+	}
+
+	.review-slider .indicators .indicator-item {
+		background-color: #FFF;
+	}
+
+.darkbox {
+	background-color:rgba(0, 0, 0, 0.3);
+	padding: 20px 25px 40px 25px;
+}
+
+.parallax-container {
+	height: 600px;
+}
+
+.textbox {
+	background-color: rgba(255,255,255,0.4);
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+	.textbox h1, .textbox p {
+		color: #000;
+	}
+
+.featured-text h3, .featured-text h4, .featured-text p, .featured-link {
+	color: #FFF;
+}
+
+	.featured-text i {
+		font-size: 60px;
+	}
+
+	.featured-text h4, .featured-text p {
+		margin: 5px 0 0 10px;
+	}
+
+	.featured-text h4:hover, .featured-text p:hover {
+		opacity: 0.6;
+	}
+
+.featured-sm {
+	background: #26a69a;
+	padding: 60px 0 60px 0;
+	margin: 0;
+}
+
+	.featured-sm h3, .featured-sm h5, .featured-sm p, .featured-sm a {
+		color: #FFF;
+	}
+		
+	.featured-sm i {
+		font-size: 100px;
+	}
+
+	.featured-sm p {
+		font-size: 1rem;
+	}
+
+	.featured-sm h3, .featured-sm h5, .featured-sm p {
+		margin: 0;
+	}
+
+		.featured-sm h3 {
+			padding-bottom: 40px;
+		}
+
+	.featured-sm h5:hover, .featured-sm p:hover {
+		opacity: 0.6;
+	}
+
+.featured-vid {
+	margin: 0;
+	padding: 0;
+}
+
+	.modal-content .video-container, .featured-vid .video-container, .featured-vid-sm .video-container {
+		margin-bottom: 0;
+	}
+
+.featured-vid-sm {
+	margin: 0;
+	padding: 20px 0 20px 0;
+	background: #000;
+}
+
+.cta {
+	width: 100%;
+	border-radius: 0;
+	height: auto;
+}
+
+.padbox {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.video-container {
+	margin-bottom: 20px;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #26a69a;
+}
+
+hr.heart {
+	text-align: center;
+}
+
+	hr.heart:after {
+		content: '\002665';
+		display: inline-block;
+		position: relative;
+		top: -13px;
+		padding: 0 10px;
+		background: none;
+		color: #FFF;
+		font-size: 18px;
+	}
+
+#map {
+	margin: 0;
+	opacity: 0.7;
+}
+
+.clients a:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+@media (max-width: 992px) {
+	.mainvideo {
+		height: 230px;
+	}
+
+	.parallax-container {
+		height: 400px;
+	}
+
+	.padbox {
+		margin-top: 40px;
+		margin-bottom: 60px;
+	}
+}
+
+@media (min-width : 600px) {
+	.show-on-small-only {
+    	display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .parallax-container {
+		height: 250px;
+	}
+	.padbox {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+}
+
+/**** Wedding Wire Reviews CSS ****/
+
+	.ww-reviews-widget {
+		min-width: 100% !important;
+	    border: none !important;
+	    color: #777 !important;
+	}
+
+		.ww-reviews-widget a {
+		    color: #26a69a !important;
+		}
+
+		.ww-reviews-widget a:hover {
+			color: #26a69a !important;
+			opacity: 0.6 !important;
+		}
+
+	.ww-reviews-header-box {
+	    border-top: 1px solid #DDD !important;
+	   	border-bottom: none !important;
+	    border-right: 1px solid #DDD !important;
+	    border-left: 1px solid #DDD !important;
+	    padding: 15px !important;
+	}
+
+	.ww-reviews-box {
+		background-color: #e9f6f5 !important;
+	}
+
+	#ww-widget-wwrated-2013 {
+	    width: auto !important;
+	    margin: 5px 0 0 10px !important;
+	    font-family: sans-serif !important;
+	}
+
+		#ww-widget-wwrated-2013 .ww-bottom {
+			background: none !important;
+			height: auto !important;
+			padding: 0 !important;
+			text-align: left !important;
+			font-weight: 200 !important;
+		}
+
+		#ww-widget-wwrated-2013 a {
+		    width: auto !important;
+		    display: inherit !important;
+		    font-size: 1.3rem !important;
+		}
+
+	.review-button {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+/**** Form CSS ****/
+
+	/*-----error/success messages-----*/
+	#error {
+		display: none;
+		background: #ee6e73;
+		color: #FFF;
+		padding: 25px;
+		margin-bottom: 25px;
+	}
+
+	#success{
+		display: none;
+		background: #26a69a;
+		color: #FFF;
+		padding: 25px;
+		margin-bottom: 25px;
+	}
+
+	/*-----form elements-----*/
+	
+
+	#easy span {
+		color: #ee6e73;
+	}
+
+	#easy button {
+		float: right;
+	}
+
+	#easy textarea {
+		height: 8rem;
+	}
+
+/*! Gray v1.4.5 (https://github.com/karlhorky/gray) | MIT */
+.grayscale {
+  /* Firefox 10-34 */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+
+  /*
+    Chrome 19+,
+    Safari 6+,
+    Safari 6+ iOS,
+    Opera 15+
+  */
+  -webkit-filter: grayscale(1);
+
+  /* Firefox 35+ */
+  filter: grayscale(1);
+
+  /* IE 6-9 */
+  filter: gray;
+}
+
+.grayscale.grayscale-fade {
+  transition: filter .5s;
+}
+
+/* Webkit hack until filter is unprefixed */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .grayscale.grayscale-fade {
+    -webkit-transition: -webkit-filter .5s;
+    transition:         -webkit-filter .5s;
+  }
+}
+
+.grayscale.grayscale-off,
+.grayscale.grayscale-fade:hover {
+  -webkit-filter: grayscale(0);
+  filter:         grayscale(0);
+}
+
+/* Background element */
+.grayscale.grayscale-replaced {
+  -webkit-filter: none;
+  filter:         none;
+}
+
+.grayscale.grayscale-replaced > svg {
+  -webkit-transition: opacity .5s ease;
+  transition:         opacity .5s ease;
+  opacity: 1;
+}
+
+.grayscale.grayscale-replaced.grayscale-off > svg,
+.grayscale.grayscale-replaced.grayscale-fade:hover > svg {
+  opacity: 0;
+}

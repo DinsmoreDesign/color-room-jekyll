@@ -1,0 +1,79 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Color Room Films
+email: info@colorroomfilms.com
+description: Motion Picture Memories and Videography for Your Special Day
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: colorroomfilms
+twitter:
+  username: colorroomfilms
+facebook:
+  app_id: 946947812026207
+  publisher: 946947812026207
+  admins: 946947812026207
+logo: /img/logo.svg
+social:
+  name: colorroomfilms
+  links: "https://www.facebook.com/colorroomfilms/"
+  links: "https://twitter.com/colorroomfilms"
+  links: "https://plus.google.com/106778430374036459605"
+  links: "https://www.youtube.com/channel/UCeeC4ieZCDdZzxIYZeGgHKQ"
+  links: "https://vimeo.com/colorroomfilms"
+  links: "http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html"
+  links: "https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435"
+
+
+# Social links
+facebook_url: "https://www.facebook.com/colorroomfilms/"
+facebook_title: "Add Color Room Films on Facebook"
+
+twitter_url: "https://twitter.com/colorroomfilms"
+twitter_title: "Follow Color Room Films on Twitter"
+
+google_url: "https://plus.google.com/106778430374036459605"
+google_title: "Visit Color Room Films on Google Plus"
+
+youtube_url: "https://www.youtube.com/channel/UCeeC4ieZCDdZzxIYZeGgHKQ"
+youtube_title: "View Color Room Films on YouTube"
+
+vimeo_url: "https://vimeo.com/colorroomfilms"
+vimeo_title: "View Color Room Films on Vimeo"
+
+weddingwire_url: "http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html"
+weddingwire_title: "Read Color Room Films' Reviews on WeddingWire"
+
+theknot_url: "https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435"
+theknot_title: "Read Color Room Films' Reviews on The Knot"
+
+# Build settings
+markdown: kramdown
+# theme: minima
+
+# Compress Sass
+sass:
+  style: compressed
+
+# Configure collections
+collections:
+  - testimonials
+  - weddingvids
+  - venuevids
+  - corporatelogos
+
+# Gems / Plugins
+gems:
+  - jekyll-seo-tag

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!-- Favicons & App Icons -->
+
+        <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+        <link rel="manifest" href="/img/icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#26a69a">
+        <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
+
+      <!-- SEO Tags -->
+
+        {% seo %}
+        
+      <!-- CSS Files -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        
+      <!-- Fonts and icons -->
+
+        <link rel="stylesheet" href="https://file.myfontastic.com/HDcwLXYryUfDWaXwTckhq4/icons.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <!-- Header bar color -->
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#26a69a">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#26a69a">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#26a69a">
+
+      <!-- Google Analytics -->
+
+        <script>
+
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-71617672-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div class="navbar-fixed">
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="{{ site.url }}/weddings" title="Color Room Films | Weddings">Weddings</a></li>
+                <li class="divider"></li>
+                <li><a href="{{ site.url }}/events" title="Color Room Films | Events">Events</a></li>
+                <li class="divider"></li>
+                <li><a href="{{ site.url }}/corporate" title="Color Room Films | Corporate">Corporate</a></li>
+                <li class="divider"></li>
+                <li><a href="{{ site.url }}/venues" title="Color Room Films | Venues">Venues</a></li>
+            </ul>
+            <nav>
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="{{ site.url }}/" class="brand-logo thin" title="Color Room Films | Home">
+                            <img src="/img/logo.svg" alt="Color Room Films Logo" class="responsive-img" style="height: 50px; padding-top: 10px; padding-right: 10px;">
+                        </a>
+                        <a href="#!" data-activates="mobile-demo" class="button-collapse right" title="Color Room Films | Mobile Menu"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="{{ site.url }}/" title="Color Room Films | Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/about" title="Color Room Films | About">About</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/faq" title="Color Room Films | FAQ">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-button" data-hover="true" data-beloworigin="true" href="#!" data-activates="dropdown1" title="Color Room Films | Portfolio Dropdown">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/contact" title="Color Room Films | Contact">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li>
+                                <a href="{{ site.url }}" title="Color Room Films | Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/about" title="Color Room Films | About">About</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/faq" title="Color Room Films | FAQ">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/weddings" title="Color Room Films | Weddings">Weddings</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/events" title="Color Room Films | Events">Events</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/corporate" title="Color Room Films | Corporate">Corporate</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/venues" title="Color Room Films | Venues">Venues</a>
+                            </li>
+                            <li>
+                                <a href="{{ site.url }}/contact" title="Color Room Films | Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
