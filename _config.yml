@@ -77,3 +77,4 @@ collections:
 # Gems / Plugins
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
