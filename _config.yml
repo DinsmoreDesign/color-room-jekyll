@@ -67,6 +67,11 @@ markdown: kramdown
 sass:
   style: compressed
 
+# Minifier settings
+minibundle:
+  minifier_commands:
+    js: uglifyjs -
+
 # Configure collections
 collections:
   - testimonials
@@ -78,3 +83,4 @@ collections:
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll/minibundle

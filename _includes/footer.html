@@ -18,10 +18,6 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
-
   <script type="text/javascript">
 
     $(document).ready(function() {
@@ -50,7 +46,7 @@
     $("#contact-form").validate({
       submitHandler: function(form) {
         $.ajax({
-          url: "//formspree.io/info@colorroomfilms.com", 
+          url: "https://formspree.io/info@colorroomfilms.com", 
           method: "POST",
           data: {
             name: $(form).find("input[name='name']").val(),
