@@ -80,20 +80,6 @@
 
         </script>
 
-      <!-- JS Async Loads -->
-
-        {% minibundle js %}
-            source_dir: _assets/js
-            destination_path: /assets
-            baseurl: {{ site.baseurl }}
-            assets:
-              - jquery-2.1.1.min
-              - materialize.min
-              - jquery.validate.min
-            attributes:
-              async: async
-        {% endminibundle %}
-
     </head>
 
     <body>
