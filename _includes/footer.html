@@ -47,32 +47,6 @@
       $('.parallax').parallax();
     });
 
-<<<<<<< HEAD
-=======
-    $("#contact-form").validate({
-      submitHandler: function(form) {
-        $.ajax({
-          url: "//formspree.io/info@colorroomfilms.com", 
-          method: "POST",
-          data: {
-            name: $(form).find("input[name='name']").val(),
-            _replyto: $(form).find("input[name='_replyto']").val(),
-            subject: $(form).find("input[name='subject']").val(),
-            phone: $(form).find("input[name='phone']").val(),
-            message: $(form).find("textarea[name='message']").val()
-          },
-          dataType: "json",
-          success: function() {
-            $("#submit-success").openModal();
-          },
-          error: function() {
-            $("#submit-errors").openModal();      
-          }
-        });
-      }
-    });
-
->>>>>>> parent of a704bb8... Updating pages & inlining JS
   </script>
 
 </body>

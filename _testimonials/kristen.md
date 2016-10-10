@@ -1,6 +1,6 @@
 ---
 position: 2
-img: /img/home-featured.png
+img: /img/home-featured.jpg
 alt: Happy couple, smiling together
 link: {{ site.weddingwire_url }}
 title: Read Kristen's Story and Others Like it at WeddingWire

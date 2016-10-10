@@ -1,6 +1,6 @@
 ---
 position: 3
-img: /img/home-featured.png
+img: /img/home-featured.jpg
 alt: Newlyweds looking in eachother's eyes
 link: {{ site.theknot_url }}
 title: Read Stefanie's Story and Others Like it at The Knot

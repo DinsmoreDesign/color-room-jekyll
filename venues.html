@@ -36,11 +36,17 @@ image: /img/venues.jpg
 
 		        {% for venuevids in site.venuevids %}
 
-		          	<div class="col m6 s12">
+		          	<div class="col m6 s12 hide-on-small-only">
 		            	<h5 class="thin colorize">{{ venuevids.title }} <small class="gray">{{ venuevids.location }}</small></h5>
 		            	<div class="video-container">
 		              		<iframe src="{{ venuevids.link }}" frameborder="0" title="{{ venuevids.description }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		            	</div>
+		          	</div>
+		          	<div class="col m6 s12 hide-on-med-and-up">
+		            	<a href="{{ venuevids.link }}">
+			            	<h5 class="thin colorize">{{ venuevids.title }} <small class="gray">{{ venuevids.location }}</small></h5>
+			            	<img class="responsive-img" src="/img/thumbs/{{ venuevids.thumb }}" alt="{{ venuevids.description }}">
+			            </a>
 		          	</div>
 
 		        {% endfor %}

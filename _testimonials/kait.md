@@ -1,6 +1,6 @@
 ---
 position: 5
-img: /img/home-featured.png
+img: /img/home-featured.jpg
 alt: Bride and groom, ready to kiss at wedding
 link: {{ site.theknot_url }}
 title: Read Kait's Story and Others Like it at The Knot

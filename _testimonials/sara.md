@@ -1,6 +1,6 @@
 ---
 position: 1
-img: /img/home-featured.png
+img: /img/home-featured.jpg
 alt: Newlywed couple, gazing at eachother happily
 link: {{ site.theknot_url }}
 title: Read Sara's Story and Others Like it at The Knot

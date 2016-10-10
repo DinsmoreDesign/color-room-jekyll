@@ -1,6 +1,6 @@
 ---
 position: 4
-img: /img/home-featured.png
+img: /img/home-featured.jpg
 alt: Bride and groom smiling at wedding
 link: {{ site.weddingwire_url }}
 title: Read Kelli's Story and Others Like it at WeddingWire
