@@ -17,7 +17,7 @@ title: Color Room Films
 email: info@colorroomfilms.com
 description: Motion Picture Memories and Videography for Your Special Day
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://colorroomfilms.com" # the base hostname & protocol for your site
 author: colorroomfilms
 twitter:
   username: colorroomfilms

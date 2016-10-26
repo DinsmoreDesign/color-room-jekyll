@@ -7,7 +7,7 @@ image: /img/kait.jpg
 
     <div class="parallax-container">
       <div class="parallax">
-        <img class="responsive-img" src="{{ site.url }}/img/kait.jpg" alt="Bride in wedding gown's ring">
+        <img class="responsive-img" src="{{ site.baseurl }}/img/kait.jpg" alt="Bride in wedding gown's ring">
       </div>
       <div class="textbox hide-on-small-only">
         <div class="container">
@@ -85,7 +85,7 @@ image: /img/kait.jpg
         {% for testimonials in site.testimonials %}
 
           <li>
-            <img src="{{ site.url }}{{ testimonials.img }}" alt="{{ testimonials.alt }}">
+            <img src="{{ site.baseurl }}{{ testimonials.img }}" alt="{{ testimonials.alt }}">
             <div class="caption center-align">
               <a href="{{ testimonials.link }}" title="{{ testimonials.title }}" target="_blank">
                 <h2 class="thin">
@@ -109,7 +109,7 @@ image: /img/kait.jpg
   <!-- Call to Action -->
 
     <div class="row">
-      <a href="{{ site.url }}/contact" class="waves-effect waves-light btn cta" title="Contact Us">
+      <a href="{{ site.baseurl }}/contact" class="waves-effect waves-light btn cta" title="Contact Us">
         <h4>
           Send us a message for availability & pricing.
         </h4>
