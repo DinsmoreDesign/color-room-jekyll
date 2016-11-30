@@ -14,7 +14,7 @@ image: /img/contact.jpg
         </div>
       </div>
 
-      <div class="padbox">
+      <div class="padbox" style="padding-bottom: 1em;">
 
         <div class="container">
           <div class="row">
@@ -32,13 +32,16 @@ image: /img/contact.jpg
             <div class="col l8 s12">
 
               <!-- Contact Form -->
-
+              
                 <div id="form">
-                  <form id="contact-form" action="//formspree.io/info@colorroomfilms.com" method="POST">
+                  <form id="easy" name="contact" method="post" action="{{ site.baseurl }}/contact/submit.php" onSubmit="return checkform()">
 
-                    <!-- Redirect -->
+                    <!-- Error & Success Message -->
 
-                      <input type="hidden" name="_next" value="{{ site.baseurl }}/contact" />
+                      <div id="error" class="col s12"></div>
+                      <div id="success" class="col s12">
+                        Thank you, your email has been sent.
+                      </div>
 
                     <!-- Name Input -->
 
@@ -46,7 +49,7 @@ image: /img/contact.jpg
                         <label for="name">
                           Name<span>*</span>
                         </label>
-                        <input type="text" name="name" placeholder="Enter your name here" required />
+                        <input type="text" name="name" id="name" placeholder="Enter your name here" />
                       </div>
 
                     <!-- Email Input -->
@@ -55,16 +58,7 @@ image: /img/contact.jpg
                         <label for="email">
                           Email<span>*</span>
                         </label>
-                        <input type="email" name="_replyto" placeholder="Enter your email here" required />
-                      </div>
-
-                    <!-- Subject Input -->
-
-                      <div class="col l6 m6 s12">
-                        <label for="email">
-                          Subject<span>*</span>
-                        </label>
-                        <input type="text" name="subject" placeholder="Enter your subject here" required />
+                        <input type="text" name="email" id="email" placeholder="Enter your email here" />
                       </div>
 
                     <!-- Phone Input -->
@@ -73,7 +67,25 @@ image: /img/contact.jpg
                         <label for="phone">
                           Phone<span>*</span>
                         </label>
-                        <input type="tel" name="phone" placeholder="Enter your phone number here" required />
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number here" />
+                      </div>
+
+                    <!-- Date Input -->
+
+                      <div class="col l6 m6 s12">
+                        <label for="date">
+                          Wedding Date<span>*</span>
+                        </label>
+                        <input type="date" name="date" id="date" placeholder="Enter your phone number here" class="datepicker" />
+                      </div>
+
+                    <!-- Subject Input -->
+
+                      <div class="col s12">
+                        <label for="subject">
+                          Subject
+                        </label>
+                        <input type="text" name="subject" id="subject" placeholder="Enter your subject here" />
                       </div>
 
                     <!-- Message Input -->
@@ -82,17 +94,32 @@ image: /img/contact.jpg
                         <label for="message">
                           Message<span>*</span>
                         </label>  
-                        <textarea name="message" placeholder="Type your message in here" class="materialize-textarea" required></textarea>
+                        <textarea name="message" id="message" placeholder="Type your message in here" class="materialize-textarea"></textarea>
                       </div>
 
-                    <!-- Submit Button -->
+                    <!-- Verification Section-->
 
                       <div class="col s12">
-                        <button type="submit" class="waves-effect waves-light btn cta">
-                          Submit
-                        </button>
-                      </div>
+                        <div class="col l2 m3 s4">
+                          <img class="responsive-img" id ="vimage" src="{{ site.baseurl }}/form/image.php" alt="Verification code" />
+                        </div>
+                        <div class="col l2 m1 s2">
+                          <a class="refresh" href="#" onclick="document.getElementById('vimage').src = '{{ site.baseurl }}/form/image.php?' + Math.random(); return false">
+                            <img class="responsive-img" src="{{ site.baseurl }}/form/refresh.png" alt="Anti Spam">
+                          </a>
+                        </div>
 
+                      <!-- Captcha Input & Submit -->
+
+                        <div class="col l4 m4 s6">
+                          <input type="text" name="verify" id="verify" placeholder="Enter the key" title="This confirms you are a human user and not a spam-bot."/>
+                        </div>
+                        <div class="col l4 m4 s12">
+                          <button type='submit' class="waves-effect waves-light btn" id='send_message'>
+                            Submit
+                          </button>
+                        </div>
+                      </div>  
                   </form>
                 </div>
 
@@ -118,28 +145,4 @@ image: /img/contact.jpg
           </div>
         </div>
 
-      </div>
-
-    <!-- Successful Submit Modal -->
-
-      <div id="submit-success" class="modal bottom-sheet">
-        <div class="modal-content">
-          <h4 class="colorize thin">Success!</h4>
-          <p>Thank you for submiting an inquiry, we'll be in touch with you soon.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-      </div>
-
-    <!-- Error Modal -->
-
-      <div id="submit-errors" class="modal bottom-sheet">
-        <div class="modal-content">
-          <h4 class="thin" style="color: #ee6e73">Error!</h4>
-          <p>We're sorry, it looks like there was an error when submitting your form. Please try again later.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
       </div>

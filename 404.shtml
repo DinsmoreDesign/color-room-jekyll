@@ -1,6 +1,5 @@
 ---
-layout: page
-permalink: /404/
+layout: default
 title: "404: Page Not Found | Color Room Films"
 description: "Motion Picture Memories and Videography for Your Special Day"
 image: /img/kait.jpg
@@ -15,7 +14,7 @@ image: /img/kait.jpg
 
 <div class="parallax-container">
     <div class="parallax">
-       	<img class="responsive-img" src="{{ site.url }}/img/kait.jpg" alt="Bride in wedding gown's ring">
+       	<img class="responsive-img" src="{{ site.baseurl }}/img/kait.jpg" alt="Bride in wedding gown's ring">
     </div>
 </div>
 
@@ -25,7 +24,7 @@ image: /img/kait.jpg
 			This page either doesn't exist, or it moved somewhere else.
 		</h4>
 		<p>
-			If you think this is an error, please <a href="{{ site.url }}/contact" title="Let us know about an error">let us know</a> so we can fix it!
+			If you think this is an error, please <a href="{{ site.baseurl }}/contact" title="Let us know about an error">let us know</a> so we can fix it!
 		</p>
 	</div>
 </div>
