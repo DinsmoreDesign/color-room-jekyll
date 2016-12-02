@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /pricing
+Disallow: /pricing/
+Disallow: /pricing/index.html
+Disallow: /Gemfile
+Disallow: /Gemfile.lock

@@ -7,7 +7,7 @@ image: /img/kait.jpg
 <div class="row featured-sm" style="background: #ee6e73">
     <div class="container">
         <div class="col s12 center">
-        	<h3 class="thin" style="padding-bottom: 0">Page Not Found (404)</h3>
+        	<h1 class="thin" style="padding-bottom: 0; color: #FFF">Page Not Found (404)</h1>
         </div>
     </div>
 </div>
@@ -20,9 +20,9 @@ image: /img/kait.jpg
 
 <div class="row">
 	<div class="container padbox center">
-		<h4 class="thin" style="color: #ee6e73">
+		<h3 class="thin" style="color: #ee6e73">
 			This page either doesn't exist, or it moved somewhere else.
-		</h4>
+		</h3>
 		<p>
 			If you think this is an error, please <a href="{{ site.baseurl }}/contact" title="Let us know about an error">let us know</a> so we can fix it!
 		</p>

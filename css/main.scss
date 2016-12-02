@@ -90,11 +90,11 @@ nav .nav-wrapper .side-nav i {
 		height: 100%;
 		display: inline-block;
 		margin-right: -4px;
+		background-color: #26a69a;
+		color: #FFF
 	}
 		.social-nav a:hover {
-			color: #FFF;
-			background-color: #26a69a;
-			opacity: 1;
+			opacity: 0.6;
 		}
 
 .container {
@@ -246,8 +246,12 @@ nav .nav-wrapper .side-nav i {
 	border-radius: 0;
 	height: auto;
 }
-	.cta h4 {
+	.cta h3 {
 		margin: 3rem;
+	}
+	.cta i {
+		font-size: 2.92rem;
+    	line-height: 110%;
 	}
 
 .padbox {
@@ -319,64 +323,10 @@ hr.heart {
 	}
 }
 
-/**** Wedding Wire Reviews CSS ****/
-
-	.ww-reviews-widget {
-		min-width: 100% !important;
-	    border: none !important;
-	    color: #777 !important;
-	}
-
-		.ww-reviews-widget a {
-		    color: #26a69a !important;
-		}
-
-		.ww-reviews-widget a:hover {
-			color: #26a69a !important;
-			opacity: 0.6 !important;
-		}
-
-	.ww-reviews-header-box {
-	    border-top: 1px solid #DDD !important;
-	   	border-bottom: none !important;
-	    border-right: 1px solid #DDD !important;
-	    border-left: 1px solid #DDD !important;
-	    padding: 15px !important;
-	}
-
-	.ww-reviews-box {
-		background-color: #e9f6f5 !important;
-	}
-
-	#ww-widget-wwrated-2013 {
-	    width: auto !important;
-	    margin: 5px 0 0 10px !important;
-	    font-family: sans-serif !important;
-	}
-
-		#ww-widget-wwrated-2013 .ww-bottom {
-			background: none !important;
-			height: auto !important;
-			padding: 0 !important;
-			text-align: left !important;
-			font-weight: 200 !important;
-		}
-
-		#ww-widget-wwrated-2013 a {
-		    width: auto !important;
-		    display: inherit !important;
-		    font-size: 1.3rem !important;
-		}
-
-	.review-button {
-		margin-top: 10px;
-		width: 100%;
-	}
-
 /**** Form CSS ****/
 
 	/*-----error/success messages-----*/
-	#error {
+	.error {
 		display: none;
 		background: #ee6e73;
 		color: #FFF;
@@ -384,27 +334,12 @@ hr.heart {
 		margin-bottom: 25px;
 	}
 
-	#success{
+	.success{
 		display: none;
 		background: #26a69a;
 		color: #FFF;
 		padding: 25px;
 		margin-bottom: 25px;
-	}
-
-	/*-----form elements-----*/
-	
-
-	#easy span {
-		color: #ee6e73;
-	}
-
-	#easy button {
-		float: right;
-	}
-
-	#easy textarea {
-		height: 8rem;
 	}
 
 /*! Gray v1.4.5 (https://github.com/karlhorky/gray) | MIT */
@@ -496,4 +431,65 @@ footer.page-footer .footer-copyright {
 .footer-copyright p {
 	-webkit-margin-before: 7px;
 	color: #FFF;
+}
+
+/***** Pricing Tables *****/
+
+/* STYLE 1 */
+.pricing.style-1 .price {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.pricing.style-1 .plan-signup-btn a {
+	padding: 15px;
+	height: auto;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+/* COMMON STYLE */
+.pricing .price {
+    padding: 15px 0;
+    background-color: #26a69a;
+}
+.pricing .price h4,
+.pricing .plan-title h5{
+    text-align: center;
+    line-height: 60%;
+}
+.pricing .price span,
+.pricing .plan-title span{
+    display: inline-block;
+    position: relative;
+}
+.pricing .plan-title span.plan{
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+.pricing .price span.amount {
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+// .pricing .price span.period {
+//     margin-left: -10px;
+// }
+.pricing .price span.currency {
+    letter-spacing: -6px;
+    top: -20px;
+}
+.pricing .price span.currency, .pricing .price span.period {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.pricing .collection li.collection-item:hover{
+    background: #f5f5f5;
+}
+.dark-grey-text {
+    color: #121212;
+}
+.collection {
+	margin: 0.5rem 0 0.5rem 0;
+}
+.collection .collection-item {
+	padding: 15px 20px;
 }
