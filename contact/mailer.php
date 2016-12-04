@@ -34,11 +34,13 @@
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $name via Color Room Films <noreply@colorroomfilms.com>\n";
+        $email_headers = "From: $name <colorroomfilms@secureserver.net>\n";
         $email_headers .= "Reply-To: $name <$email>\n";
 
+        $add_header = "-f $email\n";
+
         // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail($recipient, $subject, $email_content, $email_headers, $add_header)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Your message has been sent.";

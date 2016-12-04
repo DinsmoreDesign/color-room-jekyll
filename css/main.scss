@@ -327,18 +327,16 @@ hr.heart {
 
 	/*-----error/success messages-----*/
 	.error {
-		display: none;
 		background: #ee6e73;
 		color: #FFF;
-		padding: 25px;
+		padding: 15px !important;
 		margin-bottom: 25px;
 	}
 
 	.success{
-		display: none;
 		background: #26a69a;
 		color: #FFF;
-		padding: 25px;
+		padding: 15px !important;
 		margin-bottom: 25px;
 	}
 
