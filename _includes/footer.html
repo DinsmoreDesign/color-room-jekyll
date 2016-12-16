@@ -66,6 +66,24 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+  {% if page.url == "/weddings/" %}
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.fancybox').fancybox({
+          padding   : 0,
+          maxWidth  : '100%',
+          maxHeight : '100%',
+          width   : 1280,
+          height    : 720,
+          autoSize  : true,
+          closeClick  : true,
+          openEffect  : 'elastic',
+          closeEffect : 'elastic'
+        });
+      });
+    </script>
+  {% endif %}
 
   <script type="text/javascript">
 
