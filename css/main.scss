@@ -114,6 +114,10 @@ nav .nav-wrapper .side-nav i {
 	color: #26a69a;
 }
 
+.pink-text {
+	color: #ee6e73;
+}
+
 .gray {
 	color: #777;
 }
@@ -258,6 +262,20 @@ nav .nav-wrapper .side-nav i {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
+.callout {
+	background-color: #26a69a;
+	color: #FFF;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin: 0;
+}
+	.callout h2 {
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+	.callout p {
+		margin: 0;
+	}
 
 .video-container {
 	margin-bottom: 20px;
