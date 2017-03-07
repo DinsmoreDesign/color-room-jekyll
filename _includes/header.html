@@ -15,7 +15,7 @@
         ***     ***  ***     ***
          ***    ***  ***    ***
            ********  ********
-             
+
            Website created by
            dinsmoredesign.com
 
@@ -60,12 +60,12 @@
         {% seo %}
 
         <meta name="keywords" content="{% for keyword in page.keywords %}{{keyword}}{% unless forloop.last %}, {% endunless %}{% endfor %}">
-        
+
       <!-- CSS Files -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-        
+
       <!-- Fonts and icons -->
 
         <link rel="stylesheet" href="https://file.myfontastic.com/HDcwLXYryUfDWaXwTckhq4/icons.css">
@@ -167,8 +167,25 @@
                 </nav>
             </div>
 
-        <!-- Knot Callout -->
+        <!-- Awards Callout -->
 
-            <div class="row center" style="margin-bottom: 0; background-color: rgba(38,166,154,0.1);">
-                <img class="responsive-img" src="{{ site.baseurl }}/img/knot-best-of_sm.jpg" alt="2017 Pick: The Knot Best of Weddings" style="margin-bottom: -6px;">
+            <div class="row center awards valign-wrapper">
+              <div class="awards-title">
+                <h4 class="colorize bold valign">
+                  Thank you<br/>
+                  <small class="colorize thin">for voting for us!</small>
+                </h3>
+              </div>
+              <div class="awards-container">
+                <div class="award-item item-left">
+                  <a href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" title="View us on The Knot to view our 2017 Best of Weddings Award!" target="_blank">
+                    <img class="responsive-img" src="{{ site.baseurl }}/img/theknot-h.png" alt="2017 Pick: The Knot Best of Weddings">
+                  </a>
+                </div>
+                <div class="award-item item-right">
+                  <a href="https://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" title="Visit us on WeddingWire to view our 2017 Couples' Choice Award!" target="_blank">
+                    <img class="responsive-img" src="{{ site.baseurl }}/img/weddingwire-h.png" alt="2017 Pick: WeddingWire Couples' Choice Award">
+                  </a>
+                </div>
+              </div>
             </div>

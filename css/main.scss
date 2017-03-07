@@ -106,6 +106,10 @@ nav .nav-wrapper .side-nav i {
 	font-weight: 300;
 }
 
+.bold {
+	font-weight: 500;
+}
+
 .slider {
 	margin-bottom: 40px;
 }
@@ -209,7 +213,7 @@ nav .nav-wrapper .side-nav i {
 	.featured-sm h3, .featured-sm h5, .featured-sm p, .featured-sm a {
 		color: #FFF;
 	}
-		
+
 	.featured-sm i {
 		font-size: 100px;
 	}
@@ -829,3 +833,49 @@ figure {
 .video img:hover, .video img:active, .video img:focus {
 	opacity: 0.75;
 }
+.awards {
+	white-space: nowrap;
+  max-width: 100%;
+  margin-bottom: 0;
+  background-color: rgba(38,166,154,0.1);
+}
+.award-item {
+	max-width: 50%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+}
+.awards-title {
+	position: absolute;
+	width: 100%;
+	display: none;
+}
+	.awards-title h4 {
+		text-align: center;
+		margin: 0;
+		line-height: 0.9;
+	}
+		.awards-title h4 small {
+			font-size: 63%;
+		}
+ .award-item img {
+	 margin-bottom: -6px;
+ }
+ .awards-container {
+	 margin: 0 auto;
+ }
+	 @media only screen and (min-width: 993px) {
+		.awards-container {
+			width: 70%;
+		}
+		.item-left {
+			float: left;
+		}
+		.item-right {
+			float: right;
+		}
+		.awards-title {
+			display: block;
+		}
+	}
