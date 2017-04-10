@@ -66,6 +66,22 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      $(".button-collapse").sideNav({
+
+        edge: 'right',
+        closeOnClick: true
+
+      });
+
+    })
+
+  </script>
+
   {% if page.url == "/weddings/" %}
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
@@ -85,36 +101,23 @@
     </script>
   {% endif %}
 
-  <script type="text/javascript">
+  {% if page.url == "/" %}
+    <script type="text/javascript">
 
-    $(document).ready(function() {
+      $(document).ready(function(){
 
-      $(".button-collapse").sideNav({
+        $('.slider.review-slider').slider({full_width: true});
+        $('.slider.review-slider').height(640);
+        $('.review-slider .slides').height(600);
 
-        edge: 'right',
-        closeOnClick: true
+        $('.slider.home-header').slider({full_width: true, indicators: false});
+        $('.slider.home-header').height(612);
+        $('.home-header .slides').height(612);
 
       });
 
-    })
-
-    $(document).ready(function(){
-
-      $('.slider.review-slider').slider({full_width: true});
-      $('.slider.review-slider').height(640);
-      $('.review-slider .slides').height(600);
-
-      $('.slider.home-header').slider({full_width: true, indicators: false});
-      $('.slider.home-header').height(612);
-      $('.home-header .slides').height(612);
-
-    });
-
-    $(document).ready(function(){
-      $('.parallax').parallax();
-    });
-
-  </script>
+    </script>
+  {% endif %}
 
 </body>
 
