@@ -100,9 +100,13 @@
 
     $(document).ready(function(){
 
-      $('.slider').slider({full_width: true});
-      $('.slider').height(640);
-      $('.slides').height(600);
+      $('.slider.review-slider').slider({full_width: true});
+      $('.slider.review-slider').height(640);
+      $('.review-slider .slides').height(600);
+
+      $('.slider.home-header').slider({full_width: true, indicators: false});
+      $('.slider.home-header').height(612);
+      $('.home-header .slides').height(612);
 
     });
 
