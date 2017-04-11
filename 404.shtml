@@ -12,11 +12,9 @@ image: /img/kait.jpg
     </div>
 </div>
 
-<div class="parallax-container">
-    <div class="parallax">
-       	<img class="responsive-img" src="{{ site.baseurl }}/img/kait.jpg" alt="Bride in wedding gown's ring">
-    </div>
-</div>
+<div class="img-header pricing-header"></div>
+
+{% include awards.html %}
 
 <div class="row">
 	<div class="container padbox center">
@@ -24,7 +22,10 @@ image: /img/kait.jpg
 			This page either doesn't exist, or it moved somewhere else.
 		</h3>
 		<p>
-			If you think this is an error, please <a href="{{ site.baseurl }}/contact" title="Let us know about an error">let us know</a> so we can fix it!
+			If you think this is an error, please <a class="sh_lead_button" href="https://302419.17hats.com/p#/lcf/bbkznbwthtzczfvphrfcrwfzrfzntdbf" onclick="shLeadFormPopup.openForm(event)" title="Let us know about an error">Let us know</a>
+ so we can fix it!
 		</p>
 	</div>
 </div>
+
+<script type="text/javascript" src="https://302419.17hats.com/embed/lead/script/bbkznbwthtzczfvphrfcrwfzrfzntdbf"></script>

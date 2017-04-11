@@ -253,14 +253,24 @@ nav .nav-wrapper .side-nav i {
 	width: 100%;
 	border-radius: 0;
 	height: auto;
-}
-	.cta h3 {
+
+	h3 {
 		margin: 3rem;
 	}
-	.cta i {
+	i {
 		font-size: 2.92rem;
     	line-height: 110%;
 	}
+}
+@media (max-width: 479px) {
+	.cta h3 {
+		font-size: 2rem;
+		margin: 1.5rem;
+	}
+	.cta i {
+		font-size: 2rem;
+	}
+}
 
 .padbox {
 	margin-top: 60px;
@@ -837,7 +847,19 @@ figure {
 	white-space: nowrap;
   max-width: 100%;
   margin-bottom: 0;
-  background-color: rgba(38,166,154,0.1);
+  background-color: #26a69a;
+
+	a, .thin {
+			color: #FFF;
+	}
+	h4 {
+		text-align: center;
+		margin: 0;
+		line-height: 0.9;
+	}
+		h4 small {
+			font-size: 63%;
+		}
 }
 .award-item {
 	max-width: 50%;
@@ -851,14 +873,6 @@ figure {
 	width: 100%;
 	display: none;
 }
-	.awards-title h4 {
-		text-align: center;
-		margin: 0;
-		line-height: 0.9;
-	}
-		.awards-title h4 small {
-			font-size: 63%;
-		}
  .award-item img {
 	 margin-bottom: -6px;
  }
