@@ -1,3 +1,5 @@
+<!-- Footer -->
+
   <footer class="page-footer">
     <div class="container">
       <div class="top-footer row hide-on-small-only">
@@ -62,62 +64,3 @@
       </div>
     </div>
   </footer>
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-
-  <script type="text/javascript">
-
-    $(document).ready(function() {
-
-      $(".button-collapse").sideNav({
-
-        edge: 'right',
-        closeOnClick: true
-
-      });
-
-    })
-
-  </script>
-
-  {% if page.url == "/weddings/" %}
-    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.fancybox').fancybox({
-          padding   : 0,
-          maxWidth  : '100%',
-          maxHeight : '100%',
-          width   : 1280,
-          height    : 720,
-          autoSize  : true,
-          closeClick  : true,
-          openEffect  : 'elastic',
-          closeEffect : 'elastic'
-        });
-      });
-    </script>
-  {% endif %}
-
-  {% if page.url == "/" %}
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-
-        $('.slider.review-slider').slider({full_width: true});
-        $('.slider.review-slider').height(640);
-        $('.review-slider .slides').height(600);
-
-        $('.slider.home-header').slider({full_width: true, indicators: false});
-        $('.slider.home-header').height(612);
-        $('.home-header .slides').height(612);
-
-      });
-
-    </script>
-  {% endif %}
-
-</body>
-
-</html>

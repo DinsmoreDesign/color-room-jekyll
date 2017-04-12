@@ -1,0 +1,68 @@
+<!-- JavaScript -->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+  <script type="text/javascript">
+    // Initiate mobile nav
+    $(document).ready(function() {
+      $(".button-collapse").sideNav({
+        edge: 'right',
+        closeOnClick: true
+      });
+    })
+  </script>
+
+  {% if page.url == "/weddings/" %}
+    <!-- Video Grid JS Modals -->
+      <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.fancybox').fancybox({
+            padding   : 0,
+            maxWidth  : '100%',
+            maxHeight : '100%',
+            width   : 1280,
+            height    : 720,
+            autoSize  : true,
+            closeClick  : true,
+            openEffect  : 'elastic',
+            closeEffect : 'elastic'
+          });
+        });
+      </script>
+  {% endif %}
+
+  {% if page.url == "/" %}
+    <!-- Create Homepage Sliders -->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          // Header
+          $('.slider.home-header').slider({full_width: true, indicators: false});
+          $('.slider.home-header').height(612);
+          $('.home-header .slides').height(612);
+          // Reviews
+          $('.slider.review-slider').slider({full_width: true});
+          $('.slider.review-slider').height(640);
+          $('.review-slider .slides').height(600);
+        });
+      </script>
+  {% endif %}
+
+  {% if page.url == "/contact/" %}
+    <!-- Google Maps API -->
+      <script>
+        function initMap() {
+          var uluru = {lat: 40.0919, lng: -74.3587};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzPeUo04sRLURY5PBAJBh0wH2udXXMhr4&callback=initMap"></script>
+  {% endif %}
