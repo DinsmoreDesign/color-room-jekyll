@@ -928,3 +928,56 @@
 	.home-header .caption .thin, .home-header.slider .slides li .caption p {
 		color: #000;
 	}
+
+/* * * * * Hero Images * * * * */
+
+	.hero {
+		width: 100%;
+		height: 100vh;
+
+		.div-center {
+			width: 60%;
+			margin: auto;
+		}
+		.light-overlay {
+			background-color: rgba(255,255,255,0.2);
+			height: 100%;
+			width: 100%;
+		}
+		.dark-overlay {
+			background-color: rgba(0,0,0,0.2);
+			height: 100%;
+			width: 100%;
+		}
+		h1 {
+			color: #FFF;
+			font-weight: 200;
+			font-size: 5rem;
+
+			small {
+				font-size: 65%;
+			}
+			strong {
+				font-weight: 700;
+			}
+			span {
+				border-bottom: 0.2rem solid #FFF;
+			}
+		}
+		a {
+			position: absolute;
+			bottom: -20px;
+			text-align: center;
+			font-size: 6rem;
+			color: #FFF;
+			width: 100%;
+		}
+
+	}
+	.home-header {
+		background: url({{ site.baseurl }}/img/home1.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}

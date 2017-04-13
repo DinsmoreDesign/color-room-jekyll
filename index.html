@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 image: /img/home.jpg
 keywords:
   - New Jersey
@@ -15,73 +15,26 @@ featured_title: Stefanie & Frank
 ---
 
   <!-- Hero Image -->
-    <div class="slider home-header">
-      <ul class="slides">
-        <li>
-          <img class="responsive-img" src="{{ site.baseurl }}/img/home1.jpg" alt="Bride in wedding gown's ring">
-          <div class="caption left-align">
-            <h1 class="thin">Motion Picture Memories</h1>
-            <p>
-              The most important thing to us is <strong>your story</strong>. Color Room Films aims to deliver precious
-              memories on your special day that you can relive for years to come. Our goal is to remain discreet and
-              make sure <strong>you</strong> remain the focal point all day, while telling your story in the most
-              emotional, cinematic and honest way possible.
-            </p>
-          </div>
-        </li>
-        <li>
-          <img class="responsive-img" src="{{ site.baseurl }}/img/home2.jpg" alt="Bride in wedding gown's ring">
-          <div class="caption left-align">
-            <h1 class="thin">Making Your Day Special</h1>
-            <p>
-              Color Room Films uses the highest grade cinematic tools available to tell your story; the same cameras,
-              lenses, aerial drones and other tools you would see on a Hollywood set, at the best value for your dollar.
-              We will coordinate with your vendors and family members to be discreet and avoid getting in the way of festivities.
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
 
-  <!-- Awards Callout -->
-
-    <div class="row center awards valign-wrapper" style="background-color: rgba(38,166,154,0.1)">
-      <div class="awards-title">
-        <h4 class="bold valign">
-            <a href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" target="_blank" style="color:#26a69a">
-              <small class="thin" style="color:#26a69a">Read our</small>
-              <br/>
-              Reviews!
-            </a>
-        </h4>
-      </div>
-      <div class="awards-container">
-        <div class="award-item item-left">
-          <a href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" title="View us on The Knot to view our 2017 Best of Weddings Award!" target="_blank">
-            <img class="responsive-img" src="{{ site.baseurl }}/img/theknot-h.png" alt="2017 Pick: The Knot Best of Weddings">
-          </a>
+    <div class="hero home-header">
+      <div class="dark-overlay valign-wrapper">
+        <div class="valign div-center">
+          <h1>
+            Your wedding isn't just an <small>event</small>,
+            it's an <span>experience</span>.
+            We create the <strong>motion picture memories</strong>
+            you'll cherish <em>forever</em>.
+          </h1>
         </div>
-        <div class="award-item item-right">
-          <a href="https://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" title="Visit us on WeddingWire to view our 2017 Couples' Choice Award!" target="_blank">
-            <img class="responsive-img" src="{{ site.baseurl }}/img/weddingwire-h.png" alt="2017 Pick: WeddingWire Couples' Choice Award">
-          </a>
-        </div>
+        <a href="#content">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
       </div>
-    </div>
-
-  <!-- Call to Action -->
-
-    <div class="row featured-vid">
-      <a href="{{ site.baseurl }}/contact" class="waves-effect waves-light btn cta" title="Contact Us">
-        <h3>
-          Message us for availability & pricing <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-        </h3>
-      </a>
     </div>
 
   <!-- Featured Video -->
 
-    <div class="row featured-vid">
+    <div class="row featured-vid scrollspy" id="content">
       <div class="video-container">
         <iframe src="https://player.vimeo.com/video/{{ page.featured_video }}?color=26a69a&title=0&byline=0&portrait=0" frameborder="0" title="{{ page.featured_title }} - Wedding Trailer by Color Room Films" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
