@@ -1,67 +1,55 @@
 <!-- Navbar -->
 
-  <div class="navbar-fixed">
-    <nav>
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="{{ site.baseurl }}/" class="brand-logo thin" title="Color Room Films | Home">
-              <img src="{{ site.baseurl }}/img/logo.svg" alt="Color Room Films Logo" class="responsive-img" style="height: 50px; padding-top: 10px; padding-right: 10px;">
-          </a>
-          <a href="#!" data-activates="mobile-demo" class="button-collapse right" title="Color Room Films | Mobile Menu"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="{{ site.baseurl }}/" title="Color Room Films | Home">Home</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/about" title="Color Room Films | About">About</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/faq" title="Color Room Films | FAQ">FAQ</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/weddings" title="Color Room Films | Weddings">Weddings</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/contact" title="Color Room Films | Contact">Contact</a>
-            </li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li>
-              <a href="{{ site.baseurl }}/" title="Color Room Films | Home">Home</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/about" title="Color Room Films | About">About</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/faq" title="Color Room Films | FAQ">FAQ</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/weddings" title="Color Room Films | Weddings">Weddings</a>
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/contact" title="Color Room Films | Contact">Contact</a>
-            </li>
-            <hr />
-            <li class="side-nav-social">
-              <a title="Visit Color Room Films on WeddingWire" href="http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" target="_blank">
-                  WeddingWire<i class="icon-weddingwire right"></i>
-              </a>
-            </li>
-            <li class="side-nav-social">
-              <a title="Visit Color Room Films on The Knot" href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" target="_blank">
-                  The Knot<i class="icon-theknot right"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+  <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/img/logo.svg" alt="Color Room Films Logo">
+        </a>
       </div>
-      <div class="social-nav hide-on-med-and-down">
-        <a title="Visit Color Room Films on WeddingWire" href="http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" target="_blank">
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="nav-right nav-menu">
+        {% if page.active == "home" %}
+          <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/">Home</a>
+        {% else %}
+          <a class="nav-item is-tab" href="{{ site.baseurl }}/">Home</a>
+        {% endif %}
+        {% if page.active == "about" %}
+          <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/about/">About</a>
+        {% else %}
+          <a class="nav-item is-tab" href="{{ site.baseurl }}/about/">About</a>
+        {% endif %}
+        {% if page.active == "faq" %}
+          <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/faq/">FAQ</a>
+        {% else %}
+          <a class="nav-item is-tab" href="{{ site.baseurl }}/faq/">FAQ</a>
+        {% endif %}
+        {% if page.active == "weddings" %}
+          <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/weddings/">Weddings</a>
+        {% else %}
+          <a class="nav-item is-tab" href="{{ site.baseurl }}/weddings/">Weddings</a>
+        {% endif %}
+        {% if page.active == "contact" %}
+          <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/contact/">Contact</a>
+        {% else %}
+          <a class="nav-item is-tab" href="{{ site.baseurl }}/contact/">Contact</a>
+        {% endif %}
+
+        <a class="nav-item is-tab is-icon is-hidden-mobile" title="Visit Color Room Films on WeddingWire" href="http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" target="_blank">
           <i class="icon-weddingwire"></i>
         </a>
-        <a title="Visit Color Room Films on The Knot" href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" target="_blank">
+        <a class="nav-item is-tab is-icon is-hidden-mobile" title="Visit Color Room Films on The Knot" href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" target="_blank">
           <i class="icon-theknot"></i>
         </a>
+
+        <a class="nav-item is-tab is-hidden-tablet" title="Visit Color Room Films on WeddingWire" href="http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" target="_blank">
+          <i class="icon-weddingwire" aria-hidden="true"></i>Wedding Wire
+        </a>
+        <a class="nav-item is-tab is-hidden-tablet" title="Visit Color Room Films on The Knot" href="https://www.theknot.com/marketplace/color-room-films-llc-jackson-nj-963435" target="_blank">
+          <i class="icon-theknot"></i>The Knot
+        </a>
       </div>
-    </nav>
-  </div>
+  </nav>
