@@ -114,6 +114,14 @@
 			background-size: cover;
 			color: #FFF;
 		}
+		.hero.is-about, .section.is-about {
+			background: url({{ site.baseurl }}/img/about.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			color: #FFF;
+		}
 
 /* * * * * Reviews Component * * * * */
 
