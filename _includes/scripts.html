@@ -25,7 +25,7 @@
 
   {% if page.url == "/contact/" %}
     <!-- Google Maps API -->
-      <script>
+      <!-- <script>
         function initMap() {
           var uluru = {lat: 40.0919, lng: -74.3587};
           var map = new google.maps.Map(document.getElementById('map'), {
@@ -36,8 +36,11 @@
             position: uluru,
             map: map
           });
+          var infowindow = new google.maps.InfoWindow();
+          infowindow.setContent('<div class="has-text-centered"><h1 class="title is-3">Color Room Films</h1><p class="subtitle is-5" style="margin-bottom: 0">Jackson, NJ</p><p class="subtitle is-5" style="margin-bottom: 0">+1.862.221.5716</p><p class="subtitle is-5" style="margin-bottom: 0">info@colorroomfilms.com</p></div>');
+          infowindow.open(map, marker);
         }
       </script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzPeUo04sRLURY5PBAJBh0wH2udXXMhr4&callback=initMap"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzPeUo04sRLURY5PBAJBh0wH2udXXMhr4&callback=initMap"></script> -->
       <script type="text/javascript" src="https://302419.17hats.com/vendor/iframeSizer.min.js"></script>
   {% endif %}
