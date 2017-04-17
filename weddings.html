@@ -21,39 +21,129 @@ featured_video: 191984048
 featured_title: Allison & Kevin
 ---
 
-<!-- Content -->
+  <!-- Hero Image -->
 
-  <div class="img-header weddings-header"></div>
+    <section class="hero is-fullheight is-primary is-weddings">
+      <div class="hero is-overlay darker-overlay">
 
-  {% include awards.html %}
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title is-1">
+              These are the <strong>motion picture memories</strong> you'll cherish forever.
+            </h1>
+            <h2 class="subtitle is-4">
+              <em>Don't worry, your husband can't tape over them!</em>
+            </h2>
+          </div>
+        </div>
 
-  <div class="padbox">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h1 class="thin colorize">Your Day</h1>
-          <p class="flow-text">
-            The main focus of a wedding is the couple. Our number 1 priority is to give you the best and most honest wedding film possible while never getting in the way of the guest's experience. We do this by blending into to the background, normally working behind the photographer, which helps us get the most honest and candid films possible.
+        <div class="hero-foot">
+          <div class="container">
+            <div class="tabs is-centered">
+              <ul>
+                <li>
+                  <a href="#content" title="Continue to content">
+                    <i class="fa fa-angle-down subtitle is-1" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  <!-- Content Header -->
+
+    <section class="section is-medium" id="content">
+      <div class="container has-text-centered">
+
+        <h3 class="title is-1">
+          Let's face it, you came to see our work.
+        </h3>
+        <p class="subtitle is-4">
+          <em>We'll try not to talk too much. Check out some of our films below:</em>
+        </p>
+
+      </div>
+    </section>
+
+  <!-- Main Content -->
+
+    <section class="hero is-medium is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+
+          <h3 class="title is-1">
+            It's <strong>your</strong> day, not ours!
+          </h3>
+          <p class="subtitle is-4 is-spaced">
+            The main focus of a wedding is the <strong>couple</strong>. Our #1 priority is to give you the best and most
+            honest wedding film possible while never getting in the way of the guest's experience. We do this by blending
+            into to the background, normally working behind the photographer, which helps us get the most honest and
+            candid films possible.
           </p>
-          <h4 class="thin colorize">How We Work</h4>
-          <p class="flow-text">
-            Color Room Films only uses the best gear for the job. To capture our weddings we choose to use <em>8K cinema cameras</em>. The same cameras that are used on Hollywood sets. No bigger than a shoe box, our cameras aren't intrusive and we never use lights on our couples, making them feel uncomfortable. We only pose couples <strong>after</strong> the photographer has finished with their portrait session and we'll never ask you to do something you don't want to for the sake of a shot.
+
+          <h3 class="title is-1">
+            How we work
+          </h3>
+          <p class="subtitle is-4">
+            Color Room Films only uses the best gear for the job. To capture our weddings we choose to use <em>8K cinema
+            cameras</em>. The same cameras that are used on Hollywood sets. No bigger than a shoe box, our cameras aren't
+            intrusive and we never use lights on our couples, making them feel uncomfortable. We only pose couples
+            <strong>after</strong> the photographer has finished with their portrait session and we'll never ask you to do
+            something you don't want to for the sake of a shot.
           </p>
-          <p class="flow-text colorize">
-            Our films are about <strong>your</strong> day and what <em>really</em> happened.
-          </p>
+
+          <div class="columns">
+
+            <div class="column">
+              <h3 class="title is-1">
+                Visual
+              </h3>
+              <p class="subtitle is-4">
+                The goal for us is to the create the most honest film of your event or service. We specialize in cinematic
+                films and making everyone feel like a star.
+              </p>
+            </div>
+
+            <div class="column">
+              <h3 class="title is-1">
+                Audio
+              </h3>
+              <p class="subtitle is-4">
+                For close to three decades, Steve has dedicated himself to recording, live audio and audio production. He
+                takes special pride in delivering the cleanest audio possible.
+              </p>
+            </div>
+
+            <div class="column">
+              <h3 class="title is-1">
+                Timing
+              </h3>
+              <p class="subtitle is-4">
+                Quick turnaround and meeting deadlines are our forte. We have never had a missed deadline and in most cases,
+                deliver your film ahead of schedule.
+              </p>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-    <div class="row featured-vid">
+  <!-- Featured Video -->
+
+    <section>
       <div class="video-container">
         <iframe src="https://player.vimeo.com/video/{{ page.featured_video }}?color=26a69a&title=0&byline=0&portrait=0" frameborder="0" title="{{ page.featured_title }} - Wedding Trailer by Color Room Films" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-    </div>
+    </section>
 
-    <div class="row" style="margin-bottom: 0;">
+  <!-- Video Grid -->
+
+    <section class="auto">
       {% for weddingvids in site.weddingvids %}
 
         <article class="video">
@@ -65,4 +155,22 @@ featured_title: Allison & Kevin
         </article>
 
       {% endfor %}
-    </div>
+    </section>
+
+
+  <!-- Call to Action -->
+
+    <section class="section is-medium">
+      <div class="container has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <h3 class="title is-1">Have a few questions?</h3>
+            <a class="button is-primary is-outlined is-large" href="{{ site.baseurl }}/faq/" title="Visit our FAQ page to view some of our most Frequently Asked Questions">Check out our FAQs for answers!</a>
+          </div>
+          <div class="column">
+            <h3 class="title is-1">Ready to talk?</h3>
+            <a class="button is-primary is-large" href="{{ site.baseurl }}/contact/" title="Visit our Contact page and send us a message">Send us a message!</a>
+          </div>
+        </div>
+      </div>
+    </section>
