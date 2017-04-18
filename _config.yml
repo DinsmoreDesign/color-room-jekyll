@@ -18,6 +18,7 @@ social:
   name: colorroomfilms
   links: "https://www.facebook.com/colorroomfilms/"
   links: "https://twitter.com/colorroomfilms"
+  links: "https://www.instagram.com/color_room_films/"
   links: "https://plus.google.com/106778430374036459605"
   links: "https://www.youtube.com/channel/UCeeC4ieZCDdZzxIYZeGgHKQ"
   links: "https://vimeo.com/colorroomfilms"
@@ -29,6 +30,9 @@ facebook_title: "Add Color Room Films on Facebook"
 
 twitter_url: "https://twitter.com/colorroomfilms"
 twitter_title: "Follow Color Room Films on Twitter"
+
+instagram_url: "https://www.instagram.com/color_room_films/"
+instagram_title: "Follow Color Room Films on Instagram"
 
 google_url: "https://plus.google.com/106778430374036459605"
 google_title: "Visit Color Room Films on Google Plus"
