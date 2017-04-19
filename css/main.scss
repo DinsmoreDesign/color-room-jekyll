@@ -203,6 +203,18 @@
 
 /* * * * * Footer Component * * * * */
 
+		.superfooter {
+			background-color: rgba(38,166,153,0.2);
+			font-size: 1rem;
+			padding: 1.5rem 0 1.5rem 0;
+
+			i {
+				color : $turquoise;
+			}
+			.columns {
+				margin: 0;
+			}
+		}
 		.footer {
 			background-color: $turquoise;
 			color: #FFF;
@@ -211,6 +223,7 @@
 
 			a {
 				color: #FFF;
+				padding: 0.5rem;
 
 				&:hover {
 					opacity: 0.6;
@@ -221,8 +234,8 @@
 			}
 		}
 		.subfooter {
-			background-color: rgba(38,166,153,0.2);
-			color: #999;
+			background-color: #EDEDED;
+			color: #777;
 		}
 
 /* * * * * Wedding Video Grid * * * * */
