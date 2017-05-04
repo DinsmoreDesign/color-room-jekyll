@@ -1,31 +1,56 @@
 ---
 layout: default
-title: "404: Page Not Found | Color Room Films"
-description: "Motion Picture Memories and Videography for Your Special Day"
-image: /img/kait.jpg
+title: "404: Page Not Found"
+image: /img/heros/404.jpg
 ---
-<div class="row featured-sm" style="background: #ee6e73">
-    <div class="container">
-        <div class="col s12 center">
-        	<h1 class="thin" style="padding-bottom: 0; color: #FFF">Page Not Found (404)</h1>
-        </div>
-    </div>
-</div>
 
-<div class="img-header pricing-header"></div>
+	<!-- Hero Image -->
 
-{% include awards.html %}
+		<section class="hero is-fullheight is-primary is-404">
+			<div class="hero is-fullheight dark-overlay">
 
-<div class="row">
-	<div class="container padbox center">
-		<h3 class="thin" style="color: #ee6e73">
-			This page either doesn't exist, or it moved somewhere else.
-		</h3>
-		<p>
-			If you think this is an error, please <a class="sh_lead_button" href="https://302419.17hats.com/p#/lcf/bbkznbwthtzczfvphrfcrwfzrfzntdbf" onclick="shLeadFormPopup.openForm(event)" title="Let us know about an error">Let us know</a>
- so we can fix it!
-		</p>
-	</div>
-</div>
+				<div class="hero-body">
+					<div class="container has-text-centered">
+						<h1 class="title is-1">
+							<strong>Oops! We're sorry, this page doesn't exist</strong>
+						</h1>
+						<h2 class="subtitle is-4">
+							<em>Error: (404) Page not found</em>
+						</h2>
+					</div>
+				</div>
 
-<script type="text/javascript" src="https://302419.17hats.com/embed/lead/script/bbkznbwthtzczfvphrfcrwfzrfzntdbf"></script>
+				<div class="hero-foot is-hidden-mobile">
+					<div class="container">
+						<div class="tabs is-centered">
+							<ul>
+								<li>
+									<a href="#content" title="Continue to content">
+										<i class="icon-angle-down subtitle is-1" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	<!-- Content Header -->
+
+		<section class="section is-medium" id="content">
+			<div class="container has-text-centered">
+
+				<h3 class="title is-1" style="color: #ee6e73">
+					This page either doesn't exist or it moved somewhere else.
+				</h3>
+				<p class="subtitle is-4">
+					<em>If you think this is an error, please <a class="sh_lead_button" href="https://302419.17hats.com/p#/lcf/bbkznbwthtzczfvphrfcrwfzrfzntdbf" onclick="shLeadFormPopup.openForm(event)" title="Let us know about an error">let us know</a>
+		 so we can fix it!</em>
+				</p>
+
+			</div>
+		</section>
+
+		<script type="text/javascript" src="https://302419.17hats.com/embed/lead/script/bbkznbwthtzczfvphrfcrwfzrfzntdbf"></script>

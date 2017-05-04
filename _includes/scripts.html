@@ -1,0 +1,46 @@
+<!-- JavaScript -->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+
+  {% if page.url == "/weddings/" %}
+    <!-- Video Grid JS Modals -->
+      <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.fancybox').fancybox({
+            padding   : 0,
+            maxWidth  : '100%',
+            maxHeight : '100%',
+            width   : 1280,
+            height    : 720,
+            autoSize  : true,
+            closeClick  : true,
+            openEffect  : 'elastic',
+            closeEffect : 'elastic'
+          });
+        });
+      </script>
+  {% endif %}
+
+  {% if page.url == "/contact/" %}
+    <!-- Google Maps API -->
+      <!-- <script>
+        function initMap() {
+          var uluru = {lat: 40.0919, lng: -74.3587};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+          var infowindow = new google.maps.InfoWindow();
+          infowindow.setContent('<div class="has-text-centered"><h1 class="title is-3">Color Room Films</h1><p class="subtitle is-5" style="margin-bottom: 0">Jackson, NJ</p><p class="subtitle is-5" style="margin-bottom: 0">+1.862.221.5716</p><p class="subtitle is-5" style="margin-bottom: 0">info@colorroomfilms.com</p></div>');
+          infowindow.open(map, marker);
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzPeUo04sRLURY5PBAJBh0wH2udXXMhr4&callback=initMap"></script> -->
+      <script type="text/javascript" src="https://302419.17hats.com/vendor/iframeSizer.min.js"></script>
+  {% endif %}
