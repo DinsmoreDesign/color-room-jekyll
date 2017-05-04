@@ -218,7 +218,7 @@
 			background-size: cover;
 
 			.card {
-				background-color: rgba(255,255,255,0.85)
+				background-color: rgba(255,255,255,0.85);
 			}
 			.container {
 				padding: 6rem 3rem 6rem 3rem;
@@ -242,6 +242,12 @@
 					padding-top: 3rem;
 					padding-bottom: 3rem;
 				}
+			}
+		}
+
+		@media (max-width: 563px) {
+			.reviews-container figure {
+				border-right: none;
 			}
 		}
 
