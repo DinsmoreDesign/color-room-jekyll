@@ -18,6 +18,24 @@ keywords:
   - Steve DiMaggio
   - Jane DiMaggio
   - recording
+
+team:
+  - name: Steve DiMaggio
+    image: /img/team/steve.jpg
+    bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
+    twitter: colorroomsteve
+  - name: jacnjules
+    image: /img/team/jacnjules.jpg
+    bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
+    twitter: colorroomjacnjules
+  - name: pete
+    image: /img/team/pete.jpg
+    bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
+    twitter: colorroompete
+  - name: sam
+    image: /img/team/sam.jpg
+    bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
+    twitter: colorroomsam
 ---
 
   <!-- Hero Image -->
@@ -106,6 +124,54 @@ keywords:
         </div>
       </div>
     </section>
+
+    <!-- Content Header -->
+
+      <section class="section is-medium">
+        <div class="container has-text-centered">
+
+          <h3 class="title is-1">
+            Meet the team
+          </h3>
+
+        </div>
+      </section>
+
+    <!-- Main Content -->
+
+      <section class="hero is-medium is-dark is-bold">
+        <div class="hero-body">
+          <div class="container">
+
+            <div class="columns">
+              {% for member in page.team %}
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="{{ site.baseurl }}{{ member.image }}" alt="Image of {{ member.name }}" />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <h3>{{ member.name }}</h3>
+                        {{ member.bio }}
+                        <br>
+                        <small>
+                          <a href="https://twitter.com/{{ member.twitter }}" target="_blank" title="Connect with {{ member.name }} on Twitter" style="color:#26a69a">
+                            @{{ member.twitter }}
+                          </a>
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
+      </section>
 
   <!-- Call to Action -->
 
