@@ -67,12 +67,12 @@
 				visibility: hidden;
 				width: 100%;
 				background-color: #FFF;
-				color: $turquoise;
+				color: $grey-dark;
 				text-align: center;
 				padding: 0.75em;
 				font-size: 1rem;
 				border-radius: 3px;
-				border: 1px solid $turquoise;
+				border: 1px solid $grey-dark;
 				/* Position the tooltip */
 				position: absolute;
 				z-index: 1;
@@ -86,7 +86,7 @@
 				visibility: visible;
 			}
 			a:hover {
-				background-color: $turquoise;
+				background-color: $grey-dark;
 				color: #FFF;
 				opacity: 1 !important;
 				border: 1px solid #FFF;
@@ -109,21 +109,27 @@
 			.is-hidden-tablet i {
 				margin-right: 1rem;
 			}
+			.nav-item a.is-tab.is-active, a.nav-item.is-tab.is-active,
+			.nav-item a.is-tab:hover, a.nav-item.is-tab:hover {
+				border-bottom-color: $grey-dark;
+				color: $grey-dark;
+			}
 			.is-icon {
 				color: #FFF;
-				background-color: $turquoise;
+				background-color: $grey-dark;
 
 				&:hover {
-					color: #FFF;
+					color: #FFF !important;
 					border-bottom-color: #FFF !important;
-				}
-				&:hover i {
-					opacity: 0.7;
 				}
 			}
 			.nav-item {
 				img {
 					height: 1.75rem;
+
+					&:hover {
+						opacity: 0.7;
+					}
 				}
 			}
 			.nav-toggle{
@@ -131,7 +137,10 @@
 					background-color: transparent;
 				}
 				span {
-					background-color: $turquoise;
+					background-color: $grey-dark;
+				}
+				&.is-active span {
+					background-color: $grey-dark;
 				}
 			}
 			.nav-toggle.is-active {
@@ -260,27 +269,30 @@
 			i {
 				font-size: 1.2rem;
 			}
-			&.minus h3.title.is-3 {
+			&.minus h3.title.is-3 i {
 				color: $red;
+			}
+			&.plus h3.title.is-3 i {
+				color: $turquoise;
 			}
 		}
 
 /* * * * * Footer Component * * * * */
 
 		.superfooter {
-			background-color: rgba(38,166,153,0.2);
+			background-color: $grey-lighter;
 			font-size: 1rem;
 			padding: 1.5rem 0 1.5rem 0;
 
 			i {
-				color : $turquoise;
+				color : $grey-dark;
 			}
 			.columns {
 				margin: 0;
 			}
 		}
 		.footer {
-			background-color: $turquoise;
+			background-color: $grey-dark;
 			color: #FFF;
 			font-size: 1.5rem;
 			padding: 1.5rem;
