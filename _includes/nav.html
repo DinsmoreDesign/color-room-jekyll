@@ -14,28 +14,23 @@
       <div class="nav-right nav-menu">
         {% if page.active == "home" %}
           <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/">Home</a>
-        {% else %}
-          <a class="nav-item is-tab" href="{{ site.baseurl }}/">Home</a>
+          {% else %}
+            <a class="nav-item is-tab" href="{{ site.baseurl }}/">Home</a>
         {% endif %}
         {% if page.active == "about" %}
           <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/about/">About</a>
-        {% else %}
-          <a class="nav-item is-tab" href="{{ site.baseurl }}/about/">About</a>
-        {% endif %}
-        {% if page.active == "faq" %}
-          <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/faq/">FAQ</a>
-        {% else %}
-          <a class="nav-item is-tab" href="{{ site.baseurl }}/faq/">FAQ</a>
+          {% else %}
+            <a class="nav-item is-tab" href="{{ site.baseurl }}/about/">About</a>
         {% endif %}
         {% if page.active == "weddings" %}
           <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/weddings/">Weddings</a>
-        {% else %}
-          <a class="nav-item is-tab" href="{{ site.baseurl }}/weddings/">Weddings</a>
+          {% else %}
+            <a class="nav-item is-tab" href="{{ site.baseurl }}/weddings/">Weddings</a>
         {% endif %}
         {% if page.active == "contact" %}
           <a class="nav-item is-tab is-active" href="{{ site.baseurl }}/contact/">Contact</a>
-        {% else %}
-          <a class="nav-item is-tab" href="{{ site.baseurl }}/contact/">Contact</a>
+          {% else %}
+            <a class="nav-item is-tab" href="{{ site.baseurl }}/contact/">Contact</a>
         {% endif %}
 
         <a class="nav-item is-tab is-icon is-hidden-mobile social" title="Visit Color Room Films on WeddingWire" href="http://www.weddingwire.com/reviews/color-room-films-jackson/fd77ea76d63e4a5f.html" target="_blank">
