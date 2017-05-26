@@ -260,6 +260,41 @@
 			}
 		}
 
+/* * * * * Pricing Table Component * * * * */
+
+		.pricing {
+			border: 1px solid $grey-dark;
+
+			h3 {
+				padding: 2rem;
+				border-bottom: 1px solid $grey-dark;
+				font-weight: 300;
+
+				&.title {
+					margin: 0;
+				}
+			}
+			.feature {
+				padding: 0.7rem 2rem;
+
+				&:nth-child(even) {
+					background-color: #EFEFEF;
+				}
+				span {
+					color: #333;
+				}
+			}
+			.pricing-footer {
+				background-color: $grey-dark;
+				padding: 1rem;
+				color: #FFF;
+
+				span {
+					font-size: 1.5rem;
+				}
+			}
+		}
+
 /* * * * * Pricing Grid Component * * * * */
 
 		.pricing-grid {
