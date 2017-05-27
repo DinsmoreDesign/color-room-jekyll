@@ -161,7 +161,7 @@
 			background-size: cover;
 			color: #FFF;
 		}
-		.hero.is-about, .section.is-about {
+		.hero.is-about {
 			background: url({{ site.baseurl }}/img/heros/about.jpg) no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
@@ -273,6 +273,10 @@
 				&.title {
 					margin: 0;
 					color: $turquoise;
+
+					&:hover {
+						color: $grey-dark;
+					}
 				}
 			}
 			.feature {
@@ -292,6 +296,18 @@
 
 				span {
 					font-size: 1.5rem;
+				}
+			}
+			a.tier-url {
+				display: block;
+				background-color: $turquoise;
+				color: #FFF;
+				padding: 0.5rem;
+				line-height: 1;
+
+				&:hover {
+					background-color: #FFF;
+					color: $turquoise;
 				}
 			}
 		}

@@ -20,22 +20,18 @@ keywords:
   - recording
 
 team:
-  - name: First Last
+  - name: Steve
     image: /img/team/steve.jpg
-    bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
-    twitter: colorroomfirstlast
-  - name: First Last
-    image: /img/team/jacnjules.jpg
-    bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
-    twitter: colorroomfirstlast
-  - name: First Last
+    bio: Co-owner and Lead Shooter of our Epic Package, Steve has always had a passion for taking others' creative ideas and bringing them to fruition. From owning and designing world-class recording studios to taking your wedding's vision and making it a reality, he's always all-in. Steve shoots exclusively on his Red Epic-W in 8K.
+  - name: Jane
+    image: /img/team/jane.jpg
+    bio: Co-owner and Lead Documentary Shooter (in name only!), Jane has been in the wedding business for over 15 years. Starting out shooting photography at a young age, she has the experience to make sure we capture your day in the most honest way possible through our documentary coverage. Jane is great with making people feel comfortable in front of the camera.
+  - name: Pete
     image: /img/team/pete.jpg
-    bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
-    twitter: colorroomfirstlast
-  - name: First Last
+    bio: Pete has been shooting weddings, sweet 16s, and corporate events for the better part of twenty years. A graduate of the School of Visual Arts for Film, Pete brings a sophisticated eye to our films. Pete has spearheaded many independent films that have gone on to win national awards and is our Lead Shooter of our Scarlet package, shot exclusively on his RED Scarlet-W.
+  - name: Sam
     image: /img/team/sam.jpg
     bio: Nulla aliquip ex voluptate dolor laboris aute consectetur ut tempor tempor irure in sint esse minim elit eu.
-    twitter: colorroomfirstlast
 ---
 
   <!-- Hero Image -->
@@ -125,7 +121,7 @@ team:
       </div>
     </section>
 
-    <!-- Content Header -->
+    <!-- Team Header -->
 
       <section class="section is-medium">
         <div class="container has-text-centered">
@@ -137,7 +133,11 @@ team:
         </div>
       </section>
 
-    <!-- Main Content -->
+    <!-- Team Image -->
+
+      <img src="{{ site.baseurl }}/img/team/team.jpg" alt="The Color Room Films Team" style="margin-bottom: -10px;" />
+
+    <!-- Team Cards -->
 
       <section class="hero is-medium is-dark is-bold">
         <div class="hero-body">
@@ -156,12 +156,12 @@ team:
                       <div class="content">
                         <h3>{{ member.name }}</h3>
                         {{ member.bio }}
-                        <br>
+                        <!-- <br>
                         <small>
                           <a href="https://twitter.com/{{ member.twitter }}" target="_blank" title="Connect with {{ member.name }} on Twitter" style="color:#26a69a">
                             @{{ member.twitter }}
                           </a>
-                        </small>
+                        </small> -->
                       </div>
                     </div>
                   </div>
