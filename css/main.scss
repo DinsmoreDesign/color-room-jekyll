@@ -282,8 +282,15 @@
 			.feature {
 				padding: 0.7rem 2rem;
 
+				&:hover {
+					background-color: rgba(38, 166, 154, 0.1);
+				}
 				&:nth-child(even) {
 					background-color: #EFEFEF;
+
+					&:hover {
+						background-color: rgba(38, 166, 154, 0.1);
+					}
 				}
 				span {
 					color: #333;
