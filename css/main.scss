@@ -153,72 +153,21 @@
 
 /* * * * * Hero Component * * * * */
 
-		.hero.is-home {
-			background: url({{ site.baseurl }}/img/heros/home.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		section.hero {
+			-webkit-background-size: cover !important;
+			-moz-background-size: cover !important;
+			-o-background-size: cover !important;
+			background-size: cover !important;
 			color: #FFF;
-		}
-		.hero.is-about {
-			background: url({{ site.baseurl }}/img/heros/about.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-faq {
-			background: url({{ site.baseurl }}/img/heros/faq.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-weddings {
-			background: url({{ site.baseurl }}/img/heros/weddings.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-contact {
-			background: url({{ site.baseurl }}/img/heros/contact.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-pricing {
-			background: url({{ site.baseurl }}/img/heros/pricing.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-404 {
-			background: url({{ site.baseurl }}/img/heros/404.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero .hero-body a {
-			border-bottom: 1px dotted #FFF;
 
-			&:hover {
-				opacity: 0.9;
+			a {
+				border-bottom: 1px dotted #FFF;
+
+				&:hover {
+					opacity: 0.9;
+				}
 			}
 		}
-
-/* * * * *  Responsive Hero Component * * * * */
-
 		.responsive-hero {
 			margin-top: 3.2rem;
 			position: relative;
@@ -226,6 +175,7 @@
 
 			img {
 				display: block;
+				margin-bottom: -6px;
 			}
 			.hero-overlay {
 				position: absolute;
@@ -242,6 +192,7 @@
 			}
 			a {
 				border-bottom: 1px dotted #FFF;
+				color: #FFF;
 
 				&:hover {
 					opacity: 0.9;

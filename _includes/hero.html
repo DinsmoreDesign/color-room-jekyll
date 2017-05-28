@@ -1,6 +1,6 @@
-<!-- Hero Image -->
+<!-- Desktop Hero -->
 
-  <section class="hero is-fullheight is-primary {{ page.heroclass }}">
+  <section class="hero is-fullheight is-primary is-hidden-touch" style="background: url({{ site.baseurl }}{{ page.heroimg }}) no-repeat center center fixed;">
     <div class="hero is-fullheight dark-overlay">
 
       <div class="hero-body">
@@ -28,5 +28,19 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+<!-- Mobile / Tablet Hero -->
+
+  <section class="responsive-hero is-hidden-desktop">
+    <img src="{{ site.baseurl }}{{ page.heroimg }}" alt="{{ page.heroalt }}" />
+    <div class="hero-overlay">
+      <h1 class="title is-2">
+        <strong>{{ page.herotitle}}</strong>
+      </h1>
+      <h2 class="subtitle is-4">
+        {{ page.herosub }}<em>{{ page.heroem }}</em>
+      </h2>
     </div>
   </section>
