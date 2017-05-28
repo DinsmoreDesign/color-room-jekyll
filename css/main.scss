@@ -217,6 +217,38 @@
 			}
 		}
 
+/* * * * *  Responsive Hero Component * * * * */
+
+		.responsive-hero {
+			margin-top: 3.2rem;
+			position: relative;
+			display: inline-block;
+
+			img {
+				display: block;
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				right: 0;
+				transform: translate(0, -50%);
+				text-align: center;
+				text-shadow: 0 0 50px #000;
+
+				h1,h2,h3,h4,h5,p {
+					color: #FFF;
+				}
+			}
+			a {
+				border-bottom: 1px dotted #FFF;
+
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+
 /* * * * * Reviews Component * * * * */
 
 		.reviews-container {

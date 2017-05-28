@@ -10,11 +10,11 @@ pricing:
   - name: Single Shooter Package
     price: 1989
     features:
-      - name: 1 Videographer
-      - name: Shot in 4K
-      - name: Delivered in 4K
-      - name: Your choice on edits
-      - name: Full film included
+      - name: 1 Shooter
+      - name: Shot in 1080p
+      - name: Delivered in 1080p
+      - name: Choice of trailer, or
+      - name: Choice of full film
       - name: Up to 8 hours of coverage
       - name: No drone coverage
     url: /pricing/single/
@@ -22,7 +22,7 @@ pricing:
   - name: Scarlet Package
     price: 2899
     features:
-      - name: 2 Videographers
+      - name: 2 Shooter
       - name: Shot in 5K / 4K
       - name: Delivered in 4K
       - name: Trailer included
@@ -34,7 +34,7 @@ pricing:
   - name: Epic Package
     price: 3599
     features:
-      - name: 2 Videographers
+      - name: 2 Shooter
       - name: Shot in 8K / 4K
       - name: Delivered in 4K
       - name: Trailer included
@@ -46,7 +46,7 @@ pricing:
   - name: Epic Scarlet Package
     price: 5499
     features:
-      - name: 3 Videographers
+      - name: 3 Shooter
       - name: Shot in 8K / 5K / 4K
       - name: Delivered in 4K
       - name: Trailer included
@@ -54,40 +54,16 @@ pricing:
       - name: Up to 12 hours of coverage
       - name: Drone coverage included
     url: /pricing/epicscarlet/
+
+heroimg: /img/heros/pricing.jpg
+heroalt: Bride's hands with ring
+herotitle: All the coverage you want
+heroem: At prices that fit your budget.
 ---
 
-  <!-- Hero Image -->
+  <!-- Hero Component -->
 
-    <section class="hero is-fullheight is-primary is-pricing">
-      <div class="hero is-fullheight dark-overlay">
-
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title is-1">
-              <strong>All the coverage you want</strong>
-            </h1>
-            <h2 class="subtitle is-4">
-              <em>At prices that fit your budget.</em>
-            </h2>
-          </div>
-        </div>
-
-        <div class="hero-foot is-hidden-mobile">
-          <div class="container">
-            <div class="tabs is-centered">
-              <ul>
-                <li>
-                  <a href="#content" title="Continue to content">
-                    <i class="icon-angle-down subtitle is-1" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+    {% include responsivehero.html %}
 
   <!-- Content Header -->
 

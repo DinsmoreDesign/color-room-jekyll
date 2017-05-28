@@ -2,40 +2,16 @@
 layout: default
 title: "404: Page Not Found"
 image: /img/heros/404.jpg
+
+heroimg: /img/heros/404.jpg
+heroalt: Bride's hands with ring.
+herotitle: Oops! We're sorry, this page doesn't exist.
+heroem: Error (404) Page not found
 ---
 
-	<!-- Hero Image -->
+  <!-- Hero Component -->
 
-		<section class="hero is-fullheight is-primary is-404">
-			<div class="hero is-fullheight dark-overlay">
-
-				<div class="hero-body">
-					<div class="container has-text-centered">
-						<h1 class="title is-1">
-							<strong>Oops! We're sorry, this page doesn't exist</strong>
-						</h1>
-						<h2 class="subtitle is-4">
-							<em>Error: (404) Page not found</em>
-						</h2>
-					</div>
-				</div>
-
-				<div class="hero-foot is-hidden-mobile">
-					<div class="container">
-						<div class="tabs is-centered">
-							<ul>
-								<li>
-									<a href="#content" title="Continue to content">
-										<i class="icon-angle-down subtitle is-1" aria-hidden="true"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
+    {% include responsivehero.html %}
 
 	<!-- Content Header -->
 
