@@ -56,6 +56,9 @@
 			.lighter-overlay {
 				background-color: rgba(255,255,255,0.35);
 			}
+		.about-card .card-content {
+			height: 403px;
+		}
 
 /* * * * * Tooltip Classes * * * * */
 
@@ -67,12 +70,12 @@
 				visibility: hidden;
 				width: 100%;
 				background-color: #FFF;
-				color: $turquoise;
+				color: $grey-dark;
 				text-align: center;
 				padding: 0.75em;
 				font-size: 1rem;
 				border-radius: 3px;
-				border: 1px solid $turquoise;
+				border: 1px solid $grey-dark;
 				/* Position the tooltip */
 				position: absolute;
 				z-index: 1;
@@ -86,7 +89,7 @@
 				visibility: visible;
 			}
 			a:hover {
-				background-color: $turquoise;
+				background-color: $grey-dark;
 				color: #FFF;
 				opacity: 1 !important;
 				border: 1px solid #FFF;
@@ -109,21 +112,27 @@
 			.is-hidden-tablet i {
 				margin-right: 1rem;
 			}
+			.nav-item a.is-tab.is-active, a.nav-item.is-tab.is-active,
+			.nav-item a.is-tab:hover, a.nav-item.is-tab:hover {
+				border-bottom-color: $grey-dark;
+				color: $grey-dark;
+			}
 			.is-icon {
 				color: #FFF;
-				background-color: $turquoise;
+				background-color: $grey-dark;
 
 				&:hover {
-					color: #FFF;
+					color: #FFF !important;
 					border-bottom-color: #FFF !important;
-				}
-				&:hover i {
-					opacity: 0.7;
 				}
 			}
 			.nav-item {
 				img {
 					height: 1.75rem;
+
+					&:hover {
+						opacity: 0.7;
+					}
 				}
 			}
 			.nav-toggle{
@@ -131,7 +140,10 @@
 					background-color: transparent;
 				}
 				span {
-					background-color: $turquoise;
+					background-color: $grey-dark;
+				}
+				&.is-active span {
+					background-color: $grey-dark;
 				}
 			}
 			.nav-toggle.is-active {
@@ -144,67 +156,50 @@
 
 /* * * * * Hero Component * * * * */
 
-		.hero.is-home {
-			background: url({{ site.baseurl }}/img/heros/home.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+		section.hero {
+			-webkit-background-size: cover !important;
+			-moz-background-size: cover !important;
+			-o-background-size: cover !important;
+			background-size: cover !important;
 			color: #FFF;
-		}
-		.hero.is-about, .section.is-about {
-			background: url({{ site.baseurl }}/img/heros/about.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-faq {
-			background: url({{ site.baseurl }}/img/heros/faq.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-weddings {
-			background: url({{ site.baseurl }}/img/heros/weddings.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-contact {
-			background: url({{ site.baseurl }}/img/heros/contact.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-pricing {
-			background: url({{ site.baseurl }}/img/heros/pricing.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero.is-404 {
-			background: url({{ site.baseurl }}/img/heros/404.jpg) no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			color: #FFF;
-		}
-		.hero .hero-body a {
-			border-bottom: 1px dotted #FFF;
 
-			&:hover {
-				opacity: 0.9;
+			a {
+				border-bottom: 1px dotted #FFF;
+
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+		.responsive-hero {
+			margin-top: 3.2rem;
+			position: relative;
+			display: inline-block;
+
+			img {
+				display: block;
+				margin-bottom: -6px;
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				right: 0;
+				transform: translate(0, -50%);
+				text-align: center;
+				text-shadow: 0 0 50px #000;
+
+				h1,h2,h3,h4,h5,p {
+					color: #FFF;
+				}
+			}
+			a {
+				border-bottom: 1px dotted #FFF;
+				color: #FFF;
+
+				&:hover {
+					opacity: 0.9;
+				}
 			}
 		}
 
@@ -251,6 +246,65 @@
 			}
 		}
 
+/* * * * * Pricing Table Component * * * * */
+
+		.pricing {
+			border: 1px solid $grey-dark;
+
+			h3 {
+				padding: 2rem;
+				border-bottom: 1px solid $grey-dark;
+				font-weight: 300;
+
+				&.title {
+					margin: 0;
+					color: $turquoise;
+
+					&:hover {
+						color: $grey-dark;
+					}
+				}
+			}
+			.feature {
+				padding: 0.7rem 2rem;
+
+				&:hover {
+					background-color: rgba(38, 166, 154, 0.1);
+				}
+				&:nth-child(even) {
+					background-color: #EFEFEF;
+
+					&:hover {
+						background-color: rgba(38, 166, 154, 0.1);
+					}
+				}
+				span {
+					color: #333;
+				}
+			}
+			.pricing-footer {
+				background-color: $grey-dark;
+				padding: 1rem;
+				color: #FFF;
+
+				span {
+					font-size: 1.5rem;
+				}
+			}
+			a.tier-url {
+				display: block;
+				background-color: $turquoise;
+				color: #FFF;
+				padding: 0.5rem;
+				line-height: 1;
+
+				&:hover {
+					background-color: #FFF;
+					color: $turquoise;
+				}
+			}
+		}
+
 /* * * * * Pricing Grid Component * * * * */
 
 		.pricing-grid {
@@ -260,27 +314,30 @@
 			i {
 				font-size: 1.2rem;
 			}
-			&.minus h3.title.is-3 {
+			&.minus h3.title.is-3 i {
 				color: $red;
+			}
+			&.plus h3.title.is-3 i {
+				color: $turquoise;
 			}
 		}
 
 /* * * * * Footer Component * * * * */
 
 		.superfooter {
-			background-color: rgba(38,166,153,0.2);
+			background-color: $grey-lighter;
 			font-size: 1rem;
 			padding: 1.5rem 0 1.5rem 0;
 
 			i {
-				color : $turquoise;
+				color : $grey-dark;
 			}
 			.columns {
 				margin: 0;
 			}
 		}
 		.footer {
-			background-color: $turquoise;
+			background-color: $grey-dark;
 			color: #FFF;
 			font-size: 1.5rem;
 			padding: 1.5rem;

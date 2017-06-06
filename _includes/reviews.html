@@ -1,0 +1,84 @@
+<!-- Reviews -->
+
+  <section class="hero is-medium is-dark is-bold pricing-grid">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+          <h3 class="title is-1">
+            Read what others have to say about us:
+          </h3>
+        </div>
+    </div>
+  </section>
+
+  <div class="reviews-container">
+    <div class="container">
+      <div class="columns is-multiline level">
+        {% for testimonials in site.testimonials %}
+
+          <div class="column is-4 level-item">
+            <div class="card">
+              <div class="card-content">
+                <p class="subtitle is-spaced">
+                  "{{ testimonials.review }}"
+                </p>
+                <p class="title" style="text-align: right; padding-top: 1.5rem;">
+                  - {{ testimonials.name }}
+                </p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <span>
+                    <a href="{{ testimonials.link }}" title="Read {{ testimonials.name }}'s and others like it at {{ testimonials.location }}" target="_blank">Read more reviews on {{ testimonials.location }}</a>
+                  </span>
+                </p>
+              </footer>
+            </div>
+          </div>
+
+        {% endfor %}
+      </div>
+    </div>
+    <div class="light-overlay awards">
+      <div class="container">
+        <div class="columns">
+
+          <div class="column">
+            <article class="media has-text-centered">
+              <figure class="media-left">
+                <i class="icon-theknot"></i>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-1">
+                    <strong>2017</strong> The Knot
+                  </h3>
+                  <h4 class="subtitle is-4">
+                    Best of Weddings
+                  </h4>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column">
+            <article class="media">
+              <figure class="media-left">
+                <i class="icon-weddingwire"></i>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <h3 class="title is-1">
+                    <strong>2017</strong> WeddingWire
+                  </h3>
+                  <h4 class="subtitle is-4">
+                    Couples' Choice Awards
+                  </h4>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

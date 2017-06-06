@@ -1,0 +1,46 @@
+<!-- Desktop Hero -->
+
+  <section class="hero is-fullheight is-primary is-hidden-touch" style="background: url({{ site.baseurl }}{{ page.heroimg }}) no-repeat center center fixed;">
+    <div class="hero is-fullheight dark-overlay">
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-1">
+            <strong>{{ page.herotitle}}</strong>
+          </h1>
+          <h2 class="subtitle is-4">
+            {{ page.herosub }}<em>{{ page.heroem }}</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="hero-foot is-hidden-mobile">
+        <div class="container">
+          <div class="tabs is-centered">
+            <ul>
+              <li>
+                <a href="#content" title="Continue to content">
+                  <i class="icon-angle-down subtitle is-1" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Mobile / Tablet Hero -->
+
+  <section class="responsive-hero is-hidden-desktop">
+    <img src="{{ site.baseurl }}{{ page.heroimg }}" alt="{{ page.heroalt }}" />
+    <div class="hero-overlay">
+      <h1 class="title is-3">
+        <strong>{{ page.herotitle}}</strong>
+      </h1>
+      <h2 class="subtitle is-4">
+        {{ page.herosub }}<em>{{ page.heroem }}</em>
+      </h2>
+    </div>
+  </section>

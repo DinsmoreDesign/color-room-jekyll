@@ -2,21 +2,23 @@
 layout: default
 title: "404: Page Not Found"
 image: /img/heros/404.jpg
+
+heroimg: /img/heros/404.jpg
 ---
 
-	<!-- Hero Image -->
+	<!-- Hero Component -->
 
-		<section class="hero is-fullheight is-primary is-404">
+		<section class="hero is-fullheight is-primary" style="background: url({{ site.baseurl }}{{ page.heroimg }}) no-repeat center center fixed;">
 			<div class="hero is-fullheight dark-overlay">
 
 				<div class="hero-body">
 					<div class="container has-text-centered">
 						<h1 class="title is-1">
-							<strong>Oops! We're sorry, this page doesn't exist</strong>
-						</h1>
-						<h2 class="subtitle is-4">
-							<em>Error: (404) Page not found</em>
-						</h2>
+	            <strong>Oops!</strong> We're sorry, this page doesn't exist.
+	          </h1>
+	          <h2 class="subtitle is-4">
+	            Error: <em>(404) Page Not Found</em>
+	          </h2>
 					</div>
 				</div>
 

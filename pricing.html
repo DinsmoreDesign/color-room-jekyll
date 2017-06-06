@@ -4,344 +4,104 @@ permalink: /pricing/
 title: "Pricing"
 description: "Color Room Films is South New Jersey's premier cinematic filmographer. One price - All the coverage you want."
 image: /img/heros/pricing.jpg
+
+pricing:
+
+  - name: Single Shooter Package
+    price: 1989
+    features:
+      - name: 1 Shooter
+      - name: Shot in 1080p
+      - name: Delivered in 1080p
+      - name: Choice of trailer, or
+      - name: Choice of full film
+      - name: Up to 8 hours of coverage
+      - name: No drone coverage
+    url: /pricing/single/
+
+  - name: Scarlet Package
+    price: 2899
+    features:
+      - name: 2 Shooter
+      - name: Shot in 5K / 4K
+      - name: Delivered in 4K
+      - name: Trailer included
+      - name: Full film included
+      - name: Up to 8 hours of coverage
+      - name: No drone coverage
+    url: /pricing/scarlet/
+
+  - name: Epic Package
+    price: 3599
+    features:
+      - name: 2 Shooter
+      - name: Shot in 8K / 4K
+      - name: Delivered in 4K
+      - name: Trailer included
+      - name: Full film included
+      - name: Up to 12 hours of coverage
+      - name: Drone coverage included
+    url: /pricing/epic/
+
+  - name: Epic Scarlet Package
+    price: 5499
+    features:
+      - name: 3 Shooter
+      - name: Shot in 8K / 5K / 4K
+      - name: Delivered in 4K
+      - name: Trailer included
+      - name: Full film included
+      - name: Up to 12 hours of coverage
+      - name: Drone coverage included
+    url: /pricing/epicscarlet/
+
+heroimg: /img/heros/pricing.jpg
+heroalt: Bride's hands with ring
+herotitle: All the coverage you want
+heroem: With packages for all budgets.
 ---
 
-  <!-- Hero Image -->
+  <!-- Hero Component -->
 
-    <section class="hero is-fullheight is-primary is-pricing">
-      <div class="hero is-fullheight dark-overlay">
-
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title is-1">
-              <strong>One price - All the coverage you want</strong>
-            </h1>
-            <h2 class="subtitle is-4">
-              <em>We make it easy, so you can focus on your day, not us.</em>
-            </h2>
-          </div>
-        </div>
-
-        <div class="hero-foot is-hidden-mobile">
-          <div class="container">
-            <div class="tabs is-centered">
-              <ul>
-                <li>
-                  <a href="#content" title="Continue to content">
-                    <i class="icon-angle-down subtitle is-1" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+    {% include hero.html %}
 
   <!-- Content Header -->
 
     <section class="section is-medium" id="content">
-      <div class="container has-text-centered">
+      <div class="container">
+        <h3 class="title is-1 has-text-centered">Our packages</h3>
+        <div class="columns has-text-centered">
 
-        <h3 class="title is-1">
-          <span>$3600</span>, tax included
-        </h3>
-        <p class="subtitle is-4">
-          <em>with 20% deposit due upon signing contract</em>
+          {% for tier in page.pricing %}
+            <div class="column">
+              <div class="pricing">
+                <a href="{{ site.baseurl }}{{ tier.url }}" title="Learn more about our {{ tier.name }} here">
+                  <h3 class="title is-4">
+                    {{ tier.name }}
+                  </h3>
+                </a>
+                {% for feature in tier.features %}
+                  <div class="feature">
+                    <span>{{ feature.name }}</span>
+                  </div>
+                {% endfor %}
+                <div class="pricing-footer">
+                  <span>${{ tier.price }}*</span>
+                </div>
+                <a class="tier-url" href="{{ site.baseurl }}{{ tier.url }}" title="Learn more about our {{ tier.name }} here">
+                  Learn more
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <p class="has-text-centered">
+          *<strong>Tax included.</strong> A 20% deposit is due upon signing your contract.
         </p>
 
       </div>
     </section>
 
-  <!-- Things We Do -->
+  <!-- Reviews Component -->
 
-    <section class="hero is-medium is-primary is-bold pricing-grid">
-        <div class="hero-body">
-            <div class="container">
-                <h3 class="title is-1 has-text-centered">What's included:</h3>
-                <div class="columns">
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-plus" aria-hidden="true"></i> <strong>(2) Lead shooters</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            You will receive 2 lead shooters all day! Steve normally goes with the girls and his wife Jane
-                            starts with the guys. Then we all meet up at the first look or ceremony location.
-                        </p>
-                    </div>
-
-                    <div class="column is-half">
-                        <h3 class="title is-3">
-                            <i class="icon-plus" aria-hidden="true"></i> <strong>10-12 hours of coverage</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            Normally we try to start about a half hour before photo starts. This allows the photographer
-                            to have time with "the details" alone if they would like. We will communicate before hand
-                            with the couple and the photographer to see what the perfect schedule would be. Every wedding
-                            is different so we don't have a hard and fast contracted time in our quotes
-                        </p>
-                    </div>
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-plus" aria-hidden="true"></i> <strong>Shot in 8K/4K, delivered in 4K</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            By shooting in higher resolutions we are able to not use intrusive lighting, while producing
-                            the most flattering motion pictures possible.
-                        </p>
-                    </div>
-
-                </div>
-
-                <h3 class="title is-3">
-                    <i class="icon-plus" aria-hidden="true"></i> <strong> All-day (3) camera shoot of your day's important events</strong>
-                </h3>
-                <p class="subtitle is-4">
-                    We use (2) static 4K cameras on tripods will be moved around depending on your venue and (1)
-                    <a href="http://www.red.com/products/epicw-8k" title="Learn more about the RED Epic-W" target="_blank">
-                        8K Red Epic-W
-                    </a> that we use to shoot your trailer footage. Everything we use is compact, so we can stay out of
-                    your way. We <strong>never</strong> use lights, to make sure everyone is comfortable in front of the
-                    camera. We do our best to never bring any attention to us and to stay out of the photographer's way
-                    by shooting with them. We never want to get in the way of guests or your photographers.
-                </p>
-
-                <div class="columns">
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-plus" aria-hidden="true"></i> <strong> Multiple delivery formats</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            We use MediaZilla as it provides the easiest way to download, burn DVD/Blu Ray and view from
-                            your computer. Also included is a Vimeo Portfolio in 4K of your films, which is best for
-                            viewing on a phone or streaming via your smart TV, Apple TV or Roku. Here is an
-                            <a href="https://mediazilla.com/Iojvtr313" title="MediaZilla example delivery" target="_blank">
-                                example of MediaZilla's package
-                            </a> as well as a
-                            <a href="https://vimeopro.com/colorroomfilms/stefanie-and-frank" title="Example Vimeo Portfolio" target="_blank">
-                                Vimeo Portfolio
-                            </a>.
-                        </p>
-                    </div>
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-plus" aria-hidden="true"></i> <strong> (1) Trailer and full-length film</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            Normally, we use 1 or 2 songs for your trailer (we purchase the publishing for the music
-                            that's used exclusively for your wedding), however, since we don't do cookie cutter trailers,
-                            this number may change in edit. Full films generally range from 1 to 2 hours depending on a
-                            variety of factors including ceremony length, first look, intros, ect. Here is
-                            <a href="https://vimeo.com/199419146" title="Example wedding trailer video" target="_blank">
-                                a trailer example
-                            </a> as well as
-                            <a href="https://vimeo.com/191994856" title="Example wedding full-length film" target="_blank">
-                                a full-length example
-                            </a>.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="columns">
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-plus" aria-hidden="true"></i> <strong> Drone coverage</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            Yes we provide drone coverage! We fly them ourselves, only when it's safe for everyone, and
-                            do not outsource. Usually, we can find a window in the day, even if it's raining, to get it
-                            up in the sky. Things that will prevent drone coverage: high winds, rain, mist and available
-                            space to fly in.
-                        </p>
-                    </div>
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-plus" aria-hidden="true"></i> <strong> Delivery within (30) days</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            Our contract reads (90) days but normally our turnaround is <strong>much</strong> faster -
-                            usually, within a week or two, depending on a variety of factors. Since we shoot at very high
-                            resolutions, it can take a week for films to render (upload to sites, ect.).
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-  <!-- Things We DON'T Do -->
-
-    <section class="hero is-medium is-light is-bold pricing-grid minus">
-        <div class="hero-body">
-            <div class="container">
-                <h3 class="title is-1 has-text-centered">Things we <strong>don't</strong> do:</h3>
-
-                <h3 class="title is-3">
-                    <i class="icon-minus" aria-hidden="true"></i> <strong> Provide "Raw Footage"</strong>
-                </h3>
-                <p class="subtitle is-4">
-                    Since we shoot at very high resolutions in a "flat" profile there is no practical way to
-                    supply couples with the "raw footage". We also do not shoot our wedding films in a consumer
-                    format so the couple would need a commercial-level computer and software suite to view
-                    footage. However, we do communicate with all couples before hand, multiple times, to make
-                    sure if there is any event that is out-of-the-ordinary they want captured in full, we get
-                    it for them! The below image shows what raw footage looks like vs the finished product; the
-                    bottom half is how the footage looks, directly off the camera:
-                </p>
-                <img src="{{ site.baseurl }}/img/misc/raw-footage.jpg" alt="Graded vs. Raw video footage" style="width: 100%;height:auto;padding-bottom:1.5rem" />
-
-                <div class="columns">
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-minus" aria-hidden="true"></i> <strong> Use on- and off-camera lights</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            We choose not to light any couple with anything except available light. We've found this makes
-                            the couple feel more comfortable, along with their guests. Static lighting also tends to kill
-                            the dance floor vibe!
-                        </p>
-                    </div>
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-minus" aria-hidden="true"></i> <strong> Fight with your photographer or vendors</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            Your day is about <strong>you</strong>, the couple, not the vendors. We make sure to touch
-                            base with all vendors when possible before hand, especially the photographer. This way, we
-                            can coordinate and get a vibe for how they want to work.
-                        </p>
-                    </div>
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-minus" aria-hidden="true"></i> <strong> Pose you for hours</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            We work with the photographer to make sure they get everything they need first, shooting
-                            around them. Usually, in the time they are taking to move flashes or change a lens, ect. we
-                            will shoot our footage. We <strong>love</strong> to get the couple out around sunset for a
-                            quick session when possible and will coordinate this with your photographer.
-                        </p>
-                    </div>
-
-                    <div class="column">
-                        <h3 class="title is-3">
-                            <i class="icon-minus" aria-hidden="true"></i> <strong> Use unflattering footage</strong>
-                        </h3>
-                        <p class="subtitle is-4">
-                            We only include the best footage in your full length film and trailer. What this means is,
-                            normally, there isn't a lot of "getting ready" footage in our full-films, as it is reserved
-                            in small clips for the trailer. Again, every wedding is different and we will communicate
-                            directly with the couple before-hand to make sure we get all the coverage.
-                        </p>
-                    </div>
-
-                </div>
-
-                <h3 class="title is-3">
-                    <i class="icon-minus" aria-hidden="true"></i> <strong> Charge you for travel</strong>
-                </h3>
-                <p class="subtitle is-4">
-                    Except in extreme circumstances, we'll never charge you for our travel time!
-                </p>
-
-            </div>
-        </div>
-    </section>
-
-<!-- Reviews -->
-
-  <section class="hero is-medium is-primary is-bold pricing-grid">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-          <h3 class="title is-1">
-            Read what others have to say about us:
-          </h3>
-        </div>
-    </div>
-  </section>
-
-  <div class="reviews-container">
-    <div class="container">
-      <div class="columns is-multiline level">
-        {% for testimonials in site.testimonials %}
-
-          <div class="column is-4 level-item">
-            <div class="card">
-              <div class="card-content">
-                <p class="subtitle is-spaced">
-                  "{{ testimonials.review }}"
-                </p>
-                <p class="title" style="text-align: right; padding-top: 1.5rem;">
-                  - {{ testimonials.name }}
-                </p>
-              </div>
-              <footer class="card-footer">
-                <p class="card-footer-item">
-                  <span>
-                    <a href="{{ testimonials.link }}" title="Read {{ testimonials.name }}'s and others like it at {{ testimonials.location }}" target="_blank">Read more reviews on {{ testimonials.location }}</a>
-                  </span>
-                </p>
-              </footer>
-            </div>
-          </div>
-
-        {% endfor %}
-      </div>
-    </div>
-    <div class="light-overlay awards">
-      <div class="container">
-        <div class="columns">
-
-          <div class="column">
-            <article class="media has-text-centered">
-              <figure class="media-left">
-                <i class="icon-theknot"></i>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h3 class="title is-1">
-                    <strong>2017</strong> The Knot
-                  </h3>
-                  <h4 class="subtitle is-4">
-                    Best of Weddings
-                  </h4>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="column">
-            <article class="media">
-              <figure class="media-left">
-                <i class="icon-weddingwire"></i>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <h3 class="title is-1">
-                    <strong>2017</strong> WeddingWire
-                  </h3>
-                  <h4 class="subtitle is-4">
-                    Couples' Choice Awards
-                  </h4>
-                </div>
-              </div>
-            </article>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+    {% include reviews.html %}

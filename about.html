@@ -18,60 +18,46 @@ keywords:
   - Steve DiMaggio
   - Jane DiMaggio
   - recording
+
+team:
+  - name: Steve
+    image: /img/team/steve.jpg
+    bio: Co-owner and Lead Shooter of our Epic Package, Steve has always had a passion for taking others' creative ideas and bringing them to fruition. From owning and designing world-class recording studios to taking your wedding's vision and making it a reality, he's always all-in. Steve shoots exclusively on his Red Epic-W in 8K.
+  - name: Jane
+    image: /img/team/jane.jpg
+    bio: Co-owner and Lead Documentary Shooter, Jane has been in the wedding business for over 15 years. Starting out shooting photography at a young age, she has the experience to make sure we capture your day in the most honest way possible through our documentary coverage. Jane is great with making people feel comfortable in front of the camera.
+  - name: Pete
+    image: /img/team/pete.jpg
+    bio: Pete has been shooting weddings, sweet 16s, and corporate events for the better part of twenty years. A graduate of the School of Visual Arts for Film, Pete brings a sophisticated eye to our films and has spearheaded many independent films that have gone on to win national awards. He is the Lead Shooter of our Scarlet package, shot exclusively on his RED Scarlet-W.
+  - name: Sam
+    image: /img/team/sam.jpg
+    bio: As a lover of imaginative stories, Sam grew up watching movies and strolling through local art galleries which led her to recieve a technical certificate in commercial photography in 2009. Sam also holds a BA in English Literature and attended the highly-respected Cinematography and Filmmaking program at NYU SPS. Sam has been with us almost from day one and is the documentary shooter for our Scarlet and Epic Packages.
+
+heroimg: /img/heros/about.jpg
+heroalt: Steve, Jane and their two daughters
+herotitle: Steve & Jane DiMaggio
+heroem: Color Room Films - Owners / Cinematographers
 ---
 
-  <!-- Hero Image -->
+  <!-- Hero Component -->
 
-    <section class="hero is-fullheight is-primary is-about">
-      <div class="hero is-fullheight dark-overlay">
-
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title is-1">
-              <strong>Steve & Jane DiMaggio</strong>
-            </h1>
-            <h2 class="subtitle is-4">
-              <em>Color Room Films - Owners / Cinematographers
-              </em>
-            </h2>
-          </div>
-        </div>
-
-        <div class="hero-foot is-hidden-mobile">
-          <div class="container">
-            <div class="tabs is-centered">
-              <ul>
-                <li>
-                  <a href="#content" title="Continue to content">
-                    <i class="icon-angle-down subtitle is-1" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+    {% include hero.html %}
 
   <!-- Content Header -->
 
     <section class="section is-medium" id="content">
       <div class="container has-text-centered">
 
-        <h3 class="title is-1">
-          We consider ourselves filmmakers, not just wedding videographers.
+        <h3 class="title is-2">
+          We are humble filmmakers who's goal is to bring you an honest film in the most subtle way possible.
         </h3>
-        <p class="subtitle is-4">
-          <em>Our goal is to tell your story through motion pictures.</em>
-        </p>
 
       </div>
     </section>
 
   <!-- Main Content -->
 
-    <section class="hero is-medium is-primary is-bold">
+    <section class="hero is-medium is-dark is-bold">
       <div class="hero-body">
         <div class="container">
 
@@ -106,6 +92,58 @@ keywords:
         </div>
       </div>
     </section>
+
+    <!-- Team Header -->
+
+      <section class="section is-medium">
+        <div class="container has-text-centered">
+
+          <h3 class="title is-1">
+            Meet the team
+          </h3>
+
+        </div>
+      </section>
+
+    <!-- Team Image -->
+
+      <img src="{{ site.baseurl }}/img/team/team.jpg" alt="The Color Room Films Team" style="margin-bottom: -10px; width: 100%;" />
+
+    <!-- Team Cards -->
+
+      <section class="hero is-medium is-dark is-bold">
+        <div class="hero-body">
+          <div class="container">
+
+            <div class="columns">
+              {% for member in page.team %}
+                <div class="column">
+                  <div class="card about-card">
+                    <div class="card-image">
+                      <figure class="image is-1by1">
+                        <img src="{{ site.baseurl }}{{ member.image }}" alt="Image of {{ member.name }}" />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <h3>{{ member.name }}</h3>
+                        {{ member.bio }}
+                        <!-- <br>
+                        <small>
+                          <a href="https://twitter.com/{{ member.twitter }}" target="_blank" title="Connect with {{ member.name }} on Twitter" style="color:#26a69a">
+                            @{{ member.twitter }}
+                          </a>
+                        </small> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
+      </section>
 
   <!-- Call to Action -->
 
